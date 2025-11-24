@@ -546,7 +546,7 @@ export default function CraftingTree() {
       <div className="min-h-screen bg-[#07020b] text-gray-100 flex flex-col">
         <header className="bg-[#07020b] border-b border-purple-500/20 sticky top-0 z-40">
           <div className="flex items-center justify-between pr-8">
-            <div className="flex-shrink-0 h-24 flex items-center">
+            <a href="/" className="flex-shrink-0 h-24 flex items-center cursor-pointer">
               <Image
                 src="/logo.webp"
                 alt="ARC Forge"
@@ -556,7 +556,7 @@ export default function CraftingTree() {
                 style={{ height: '100%' }}
                 priority
               />
-            </div>
+            </a>
             <nav className="flex gap-2">
               <a
                 href="/"
@@ -595,7 +595,7 @@ export default function CraftingTree() {
       {/* Header */}
       <header className="bg-[#07020b] border-b border-purple-500/20 z-40 flex-shrink-0">
         <div className="flex items-center justify-between pr-8">
-          <div className="flex-shrink-0 h-24 flex items-center">
+          <a href="/" className="flex-shrink-0 h-24 flex items-center cursor-pointer">
             <Image
               src="/logo.webp"
               alt="ARC Forge"
@@ -605,7 +605,7 @@ export default function CraftingTree() {
               style={{ height: '100%' }}
               priority
             />
-          </div>
+          </a>
           
           <nav className="flex gap-2">
             <a

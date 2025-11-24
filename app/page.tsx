@@ -56,7 +56,6 @@ export default function Home() {
   const [searchQuery, setSearchQuery] = useState('');
   const [sortField, setSortField] = useState<SortField>('name');
   const [sortAscending, setSortAscending] = useState(true);
-  const [selectedTypes, setSelectedTypes] = useState<Set<string>>(new Set());
   const [selectedItem, setSelectedItem] = useState<Item | null>(null);
 
   // Get all unique types
@@ -69,6 +68,17 @@ export default function Home() {
     });
     return Array.from(typesSet).sort();
   }, []);
+
+  // Initialize with all types selected
+  const [selectedTypes, setSelectedTypes] = useState<Set<string>>(() => {
+    const typesSet = new Set<string>();
+    (itemsData as Item[]).forEach((item) => {
+      if (item.infobox?.type) {
+        typesSet.add(item.infobox.type);
+      }
+    });
+    return typesSet;
+  });
 
   const toggleType = (type: string) => {
     const newSelected = new Set(selectedTypes);
@@ -149,7 +159,7 @@ export default function Home() {
       <header className="bg-[#07020b] border-b border-purple-500/20 sticky top-0 z-40">
         <div className="flex items-center justify-between pr-8">
           {/* Logo */}
-          <div className="flex-shrink-0 h-24 flex items-center">
+          <a href="/" className="flex-shrink-0 h-24 flex items-center cursor-pointer">
         <Image
               src="/logo.webp"
               alt="ARC Forge"
@@ -158,7 +168,7 @@ export default function Home() {
               className="h-full w-auto"
           priority
         />
-          </div>
+          </a>
           
             {/* Navigation */}
             <nav className="flex gap-2">
@@ -210,56 +220,56 @@ export default function Home() {
                 <FontAwesomeIcon icon={faArrowUpAZ} className="text-purple-400" />
                 Sort By
               </h3>
-              <div className="space-y-2 mb-3">
-                <label className="flex items-center gap-3 p-3 bg-black/20 hover:bg-purple-500/10 rounded-lg cursor-pointer transition-colors border border-transparent hover:border-purple-500/30">
-                  <input
-                    type="radio"
-                    name="sortField"
-                    value="name"
-                    checked={sortField === 'name'}
-                    onChange={(e) => setSortField(e.target.value as SortField)}
-                    className="w-4 h-4 text-purple-500 focus:ring-purple-500 focus:ring-offset-0 bg-black/40"
-                  />
-                  <span className="text-sm text-gray-300">Name</span>
-                </label>
-                <label className="flex items-center gap-3 p-3 bg-black/20 hover:bg-purple-500/10 rounded-lg cursor-pointer transition-colors border border-transparent hover:border-purple-500/30">
-                  <input
-                    type="radio"
-                    name="sortField"
-                    value="rarity"
-                    checked={sortField === 'rarity'}
-                    onChange={(e) => setSortField(e.target.value as SortField)}
-                    className="w-4 h-4 text-purple-500 focus:ring-purple-500 focus:ring-offset-0 bg-black/40"
-                  />
-                  <span className="text-sm text-gray-300">Rarity</span>
-                </label>
-                <label className="flex items-center gap-3 p-3 bg-black/20 hover:bg-purple-500/10 rounded-lg cursor-pointer transition-colors border border-transparent hover:border-purple-500/30">
-                  <input
-                    type="radio"
-                    name="sortField"
-                    value="sellprice"
-                    checked={sortField === 'sellprice'}
-                    onChange={(e) => setSortField(e.target.value as SortField)}
-                    className="w-4 h-4 text-purple-500 focus:ring-purple-500 focus:ring-offset-0 bg-black/40"
-                  />
-                  <span className="text-sm text-gray-300">Sell Price</span>
-                </label>
-                <label className="flex items-center gap-3 p-3 bg-black/20 hover:bg-purple-500/10 rounded-lg cursor-pointer transition-colors border border-transparent hover:border-purple-500/30">
-                  <input
-                    type="radio"
-                    name="sortField"
-                    value="weight"
-                    checked={sortField === 'weight'}
-                    onChange={(e) => setSortField(e.target.value as SortField)}
-                    className="w-4 h-4 text-purple-500 focus:ring-purple-500 focus:ring-offset-0 bg-black/40"
-                  />
-                  <span className="text-sm text-gray-300">Weight</span>
-                </label>
+              <div className="flex flex-wrap gap-2 mb-3">
+                <button
+                  onClick={() => setSortField('name')}
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                    sortField === 'name'
+                      ? 'bg-purple-500/30 text-purple-200 border border-purple-500/50 shadow-lg shadow-purple-500/20'
+                      : 'bg-black/20 text-gray-400 border border-purple-500/20 hover:bg-purple-500/10 hover:text-gray-300'
+                  }`}
+                >
+                  Name
+                </button>
+                <button
+                  onClick={() => setSortField('rarity')}
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                    sortField === 'rarity'
+                      ? 'bg-purple-500/30 text-purple-200 border border-purple-500/50 shadow-lg shadow-purple-500/20'
+                      : 'bg-black/20 text-gray-400 border border-purple-500/20 hover:bg-purple-500/10 hover:text-gray-300'
+                  }`}
+                >
+                  Rarity
+                </button>
+                <button
+                  onClick={() => setSortField('sellprice')}
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                    sortField === 'sellprice'
+                      ? 'bg-purple-500/30 text-purple-200 border border-purple-500/50 shadow-lg shadow-purple-500/20'
+                      : 'bg-black/20 text-gray-400 border border-purple-500/20 hover:bg-purple-500/10 hover:text-gray-300'
+                  }`}
+                >
+                  Sell Price
+                </button>
+                <button
+                  onClick={() => setSortField('weight')}
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                    sortField === 'weight'
+                      ? 'bg-purple-500/30 text-purple-200 border border-purple-500/50 shadow-lg shadow-purple-500/20'
+                      : 'bg-black/20 text-gray-400 border border-purple-500/20 hover:bg-purple-500/10 hover:text-gray-300'
+                  }`}
+                >
+                  Weight
+                </button>
               </div>
               
               <button
                 onClick={() => setSortAscending(!sortAscending)}
-                className="w-full px-4 py-3 bg-black/40 border border-purple-500/30 rounded-lg text-gray-100 hover:bg-purple-500/20 focus:outline-none focus:border-purple-500 transition-all text-sm flex items-center justify-center gap-2"
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                  sortAscending
+                    ? 'bg-black/20 text-gray-400 border border-purple-500/20 hover:bg-purple-500/10'
+                    : 'bg-black/20 text-gray-400 border border-purple-500/20 hover:bg-purple-500/10'
+                } flex items-center gap-2`}
               >
                 <FontAwesomeIcon icon={sortAscending ? faArrowUpAZ : faArrowDownAZ} />
                 {sortAscending ? 'Ascending' : 'Descending'}
@@ -285,29 +295,34 @@ export default function Home() {
                   <FontAwesomeIcon icon={faFilter} className="text-purple-400" />
                   Filter by Type
                 </h3>
-                {selectedTypes.size > 0 && (
+                <div className="flex gap-2">
+                  <button
+                    onClick={() => setSelectedTypes(new Set(allTypes))}
+                    className="text-xs text-green-400 hover:text-green-300 transition-colors underline"
+                  >
+                    Select All
+                  </button>
                   <button
                     onClick={() => setSelectedTypes(new Set())}
                     className="text-xs text-purple-400 hover:text-purple-300 transition-colors underline"
                   >
-                    Clear
+                    Clear All
                   </button>
-                )}
+                </div>
               </div>
-              <div className="space-y-2 max-h-96 overflow-y-auto pr-2">
+              <div className="flex flex-wrap gap-2 max-h-96 overflow-y-auto pr-2">
                 {allTypes.map((type) => (
-                  <label
+                  <button
                     key={type}
-                    className="flex items-center gap-3 p-3 bg-black/20 hover:bg-purple-500/10 rounded-lg cursor-pointer transition-colors border border-transparent hover:border-purple-500/30"
+                    onClick={() => toggleType(type)}
+                    className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${
+                      selectedTypes.has(type)
+                        ? 'bg-blue-500/30 text-blue-200 border border-blue-500/50 shadow-lg shadow-blue-500/20'
+                        : 'bg-black/20 text-gray-400 border border-purple-500/20 hover:bg-purple-500/10 hover:text-gray-300'
+                    }`}
                   >
-                    <input
-                      type="checkbox"
-                      checked={selectedTypes.has(type)}
-                      onChange={() => toggleType(type)}
-                      className="w-4 h-4 rounded border-gray-600 text-purple-500 focus:ring-purple-500 focus:ring-offset-0 bg-black/40"
-                    />
-                    <span className="text-sm text-gray-300">{type}</span>
-                  </label>
+                    {type}
+                  </button>
                 ))}
               </div>
             </div>
