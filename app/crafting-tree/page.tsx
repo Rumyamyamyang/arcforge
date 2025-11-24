@@ -93,7 +93,7 @@ export default function CraftingTree() {
 
     // Build graph elements from actual data
     const elements: any[] = [];
-    const CURVATURE = 140;
+    const CURVATURE = 90;
     
     // Center node - Selected item
     const centerId = `center-${currentItem.name}`;
@@ -330,6 +330,10 @@ export default function CraftingTree() {
             },
             'control-point-weights': '0.33 0.67',
             'edge-distances': 'node-position',
+            // All edges: source connects from right side (0deg), target connects on left side (180deg)
+            // This makes all edges converge to the same points on the center node
+            'source-endpoint': '90deg',
+            'target-endpoint': '270deg',
             'label': 'data(label)',
             'font-size': '9px',
             'color': '#c4b5fd',
