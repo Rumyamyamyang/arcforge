@@ -9918,7 +9918,7 @@
     ],
     "repairs": [
       {
-        "item_name": "Tempest&nbsp;I",
+        "item_name": "Tempest I",
         "recipe": [
           {
             "quantity": 2,
@@ -9932,7 +9932,7 @@
         "durability": 50
       },
       {
-        "item_name": "Tempest&nbsp;II",
+        "item_name": "Tempest II",
         "recipe": [
           {
             "quantity": 3,
@@ -9946,7 +9946,7 @@
         "durability": 55
       },
       {
-        "item_name": "Tempest&nbsp;III",
+        "item_name": "Tempest III",
         "recipe": [
           {
             "quantity": 4,
@@ -9960,7 +9960,7 @@
         "durability": 60
       },
       {
-        "item_name": "Tempest&nbsp;IV",
+        "item_name": "Tempest IV",
         "recipe": [
           {
             "quantity": 5,
@@ -10906,7 +10906,7 @@
           }
         ],
         "workshop": "Gunsmith",
-        "result_level": "Arpeggio&nbsp;I"
+        "result_level": "Arpeggio I"
       }
     ],
     "upgrades": [
@@ -10963,7 +10963,7 @@
           }
         ],
         "workshop": "Gunsmith 1",
-        "output_level": "Arpeggio&nbsp;IV",
+        "output_level": "Arpeggio IV",
         "upgrade_perks": [
           "60% Increased Fire Rate",
           "50% Reduced Reload Time",
@@ -11442,7 +11442,7 @@
           }
         ],
         "workshop": "Gunsmith",
-        "result_level": "Renegade&nbsp;I"
+        "result_level": "Renegade I"
       }
     ],
     "upgrades": [
@@ -11485,7 +11485,7 @@
         ]
       },
       {
-        "input_level": "Renegade&nbsp;III",
+        "input_level": "Renegade III",
         "recipe": [
           {
             "quantity": 2,
@@ -11536,7 +11536,7 @@
         "durability": 60
       },
       {
-        "item_name": "Renegade&nbsp;IV",
+        "item_name": "Renegade IV",
         "recipe": [
           {
             "quantity": 3,
@@ -11772,7 +11772,7 @@
     ],
     "upgrades": [
       {
-        "input_level": "Stitcher&nbsp;I",
+        "input_level": "Stitcher I",
         "recipe": [
           {
             "quantity": 8,
@@ -11784,7 +11784,7 @@
           }
         ],
         "workshop": "Gunsmith",
-        "output_level": "Stitcher&nbsp;II",
+        "output_level": "Stitcher II",
         "upgrade_perks": [
           "16.6% Reduced Horizontal Recoil",
           "13% Reduced Reload Time",
@@ -11792,7 +11792,7 @@
         ]
       },
       {
-        "input_level": "Stitcher&nbsp;II",
+        "input_level": "Stitcher II",
         "recipe": [
           {
             "quantity": 10,
@@ -11804,7 +11804,7 @@
           }
         ],
         "workshop": "Gunsmith",
-        "output_level": "Stitcher&nbsp;III",
+        "output_level": "Stitcher III",
         "upgrade_perks": [
           "33.3% Reduced Horizontal Recoil",
           "26% Reduced Reload Time",
@@ -11812,7 +11812,7 @@
         ]
       },
       {
-        "input_level": "Stitcher&nbsp;III",
+        "input_level": "Stitcher III",
         "recipe": [
           {
             "quantity": 3,
@@ -11824,7 +11824,7 @@
           }
         ],
         "workshop": "Gunsmith",
-        "output_level": "Stitcher&nbsp;IV",
+        "output_level": "Stitcher IV",
         "upgrade_perks": [
           "50% Reduced Horizontal Recoil",
           "40% Reduced Reload Time",
@@ -12046,7 +12046,7 @@
     ],
     "upgrades": [
       {
-        "input_level": "Bobcat&nbsp;I",
+        "input_level": "Bobcat I",
         "recipe": [
           {
             "quantity": 2,
@@ -12058,7 +12058,7 @@
           }
         ],
         "workshop": "Gunsmith",
-        "output_level": "Bobcat&nbsp;II",
+        "output_level": "Bobcat II",
         "upgrade_perks": [
           "15% Reduced Max Shot Dispersion",
           "15% Reduced Horizontal Recoil",
@@ -12067,7 +12067,7 @@
         ]
       },
       {
-        "input_level": "Bobcat&nbsp;II",
+        "input_level": "Bobcat II",
         "recipe": [
           {
             "quantity": 2,
@@ -12079,7 +12079,7 @@
           }
         ],
         "workshop": "Gunsmith",
-        "output_level": "Bobcat&nbsp;III",
+        "output_level": "Bobcat III",
         "upgrade_perks": [
           "30% Reduced Max Shot Dispersion",
           "30% Reduced Horizontal Recoil",
@@ -12088,7 +12088,7 @@
         ]
       },
       {
-        "input_level": "Bobcat&nbsp;III",
+        "input_level": "Bobcat III",
         "recipe": [
           {
             "quantity": 2,
@@ -12100,7 +12100,7 @@
           }
         ],
         "workshop": "Gunsmith",
-        "output_level": "Bobcat&nbsp;IV",
+        "output_level": "Bobcat IV",
         "upgrade_perks": [
           "50% Reduced Max Shot Dispersion",
           "45% Reduced Horizontal Recoil",
@@ -13399,7 +13399,7 @@
     ],
     "upgrades": [
       {
-        "input_level": "Anvil&nbsp;I",
+        "input_level": "Anvil I",
         "recipe": [
           {
             "quantity": 3,
@@ -13411,7 +13411,7 @@
           }
         ],
         "workshop": "Gunsmith",
-        "output_level": "Anvil&nbsp;II",
+        "output_level": "Anvil II",
         "upgrade_perks": [
           "6.5% Reduced Dispersion Recovery Time",
           "25% Increased Fire Rate",
@@ -13419,7 +13419,7 @@
         ]
       },
       {
-        "input_level": "Anvil&nbsp;II",
+        "input_level": "Anvil II",
         "recipe": [
           {
             "quantity": 4,
@@ -13431,7 +13431,7 @@
           }
         ],
         "workshop": "Gunsmith",
-        "output_level": "Anvil&nbsp;III",
+        "output_level": "Anvil III",
         "upgrade_perks": [
           "12.5% Reduced Dispersion Recovery Time",
           "50% Increased Fire Rate",
@@ -13439,7 +13439,7 @@
         ]
       },
       {
-        "input_level": "Anvil&nbsp;III",
+        "input_level": "Anvil III",
         "recipe": [
           {
             "quantity": 4,
@@ -13451,7 +13451,7 @@
           }
         ],
         "workshop": "Gunsmith",
-        "output_level": "Anvil&nbsp;IV",
+        "output_level": "Anvil IV",
         "upgrade_perks": [
           "18.75% Reduced Dispersion Recovery Time",
           "75% Increased Fire Rate",
@@ -13668,13 +13668,13 @@
           }
         ],
         "workshop": "Gunsmith",
-        "result_level": "Venator&nbsp;I",
+        "result_level": "Venator I",
         "blueprint_locked": true
       }
     ],
     "upgrades": [
       {
-        "input_level": "Venator&nbsp;I",
+        "input_level": "Venator I",
         "recipe": [
           {
             "quantity": 1,
@@ -13693,7 +13693,7 @@
         ]
       },
       {
-        "input_level": "Venator&nbsp;II",
+        "input_level": "Venator II",
         "recipe": [
           {
             "quantity": 1,
@@ -13733,7 +13733,7 @@
     ],
     "repairs": [
       {
-        "item_name": "Venator&nbsp;I",
+        "item_name": "Venator I",
         "recipe": [
           {
             "quantity": 1,
@@ -13747,7 +13747,7 @@
         "durability": 50
       },
       {
-        "item_name": "Venator&nbsp;II",
+        "item_name": "Venator II",
         "recipe": [
           {
             "quantity": 2,
@@ -13761,7 +13761,7 @@
         "durability": 55
       },
       {
-        "item_name": "Venator&nbsp;III",
+        "item_name": "Venator III",
         "recipe": [
           {
             "quantity": 2,
@@ -13775,7 +13775,7 @@
         "durability": 60
       },
       {
-        "item_name": "Venator&nbsp;IV",
+        "item_name": "Venator IV",
         "recipe": [
           {
             "quantity": 3,
@@ -13939,7 +13939,7 @@
           }
         ],
         "workshop": "Gunsmith",
-        "result_level": "Torrente&nbsp;I",
+        "result_level": "Torrente I",
         "blueprint_locked": true
       }
     ],
@@ -13957,7 +13957,7 @@
           }
         ],
         "workshop": "Gunsmith",
-        "output_level": "Torrente&nbsp;II",
+        "output_level": "Torrente II",
         "upgrade_perks": [
           "+10 Magazine Size",
           "15% Reduced Reload Time",
@@ -13977,7 +13977,7 @@
           }
         ],
         "workshop": "Gunsmith",
-        "output_level": "Torrente&nbsp;III",
+        "output_level": "Torrente III",
         "upgrade_perks": [
           "+20 Magazine Size",
           "30% Reduced Reload Time",
@@ -13997,7 +13997,7 @@
           }
         ],
         "workshop": "Gunsmith",
-        "output_level": "Torrente&nbsp;IV",
+        "output_level": "Torrente IV",
         "upgrade_perks": [
           "+30 Magazine Size",
           "45% Reduced Reload Time",
@@ -14007,7 +14007,7 @@
     ],
     "repairs": [
       {
-        "item_name": "Torrente&nbsp;I",
+        "item_name": "Torrente I",
         "recipe": [
           {
             "quantity": 1,
@@ -14021,7 +14021,7 @@
         "durability": 50
       },
       {
-        "item_name": "Torrente&nbsp;II",
+        "item_name": "Torrente II",
         "recipe": [
           {
             "quantity": 2,
@@ -14035,7 +14035,7 @@
         "durability": 55
       },
       {
-        "item_name": "Torrente&nbsp;III",
+        "item_name": "Torrente III",
         "recipe": [
           {
             "quantity": 2,
@@ -14049,7 +14049,7 @@
         "durability": 60
       },
       {
-        "item_name": "Torrente&nbsp;IV",
+        "item_name": "Torrente IV",
         "recipe": [
           {
             "quantity": 3,

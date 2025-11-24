@@ -320,8 +320,7 @@ export default function CraftingTree() {
           style: {
             'width': 3,
             'line-color': '#6366f1',
-            'target-arrow-shape': 'triangle',
-            'target-arrow-color': '#6366f1',
+            'target-arrow-shape': 'none',
             'curve-style': 'unbundled-bezier',
             'control-point-distances': (ele: any) => {
               const curvature = ele.data('curvature') || 0;
@@ -336,55 +335,57 @@ export default function CraftingTree() {
             'target-endpoint': '270deg',
             'label': 'data(label)',
             'font-size': '9px',
+            'line-height': 1.6,
             'color': '#c4b5fd',
+            'text-outline-color': '#07020b',
+            'text-outline-width': 5,
+            'text-outline-opacity': 1,
             'text-background-color': '#07020b',
-            'text-background-opacity': 0.95,
-            'text-background-padding': 4 as any,
+            'text-background-opacity': 1,
+            'text-background-padding': 6 as any,
+            'text-background-shape': 'roundrectangle' as any,
+            'text-border-width': 1 as any,
+            'text-border-color': '#6366f1',
+            'text-border-opacity': 0.4,
             'text-margin-y': -12,
             'text-wrap': 'wrap',
-            'text-max-width': 120 as any,
+            'text-max-width': 140 as any,
           }
         },
         {
           selector: 'edge[label="craft_from"]',
           style: {
             'line-color': '#60a5fa',
-            'target-arrow-color': '#60a5fa',
           }
         },
         {
           selector: 'edge[label="craft_to"]',
           style: {
             'line-color': '#c084fc',
-            'target-arrow-color': '#c084fc',
           }
         },
         {
           selector: 'edge[label="recycle_from"], edge[label="recycle_to"]',
           style: {
             'line-color': '#34d399',
-            'target-arrow-color': '#34d399',
           }
         },
         {
           selector: 'edge[label="salvage_from"], edge[label="salvage_to"]',
           style: {
             'line-color': '#10b981',
-            'target-arrow-color': '#10b981',
           }
         },
         {
           selector: 'edge[label="upgrade_from"], edge[label="upgrade_to"]',
           style: {
             'line-color': '#f59e0b',
-            'target-arrow-color': '#f59e0b',
           }
         },
         {
           selector: 'edge[label="repair_from"]',
           style: {
             'line-color': '#ef4444',
-            'target-arrow-color': '#ef4444',
           }
         },
         {
@@ -454,7 +455,46 @@ export default function CraftingTree() {
     setTimeout(() => {
       if (cyRef.current) {
         cyRef.current.resize();
-        cyRef.current.fit(undefined, 100);
+        cyRef.current.fit(undefined, 150);
+        
+        const centerNode = cyRef.current.$('[type="center"]');
+        const currentZoom = cyRef.current.zoom();
+        
+        // Calculate zoom needed to make center node properly visible
+        // Target: center node should take up about 20-25% of viewport height
+        const containerHeight = cyRef.current.height();
+        const centerNodeHeight = 250; // Center node height from styles
+        const targetNodeScreenHeight = containerHeight * 0.22; // 22% of screen
+        const targetZoom = targetNodeScreenHeight / centerNodeHeight;
+        
+        // Zoom in if current zoom is significantly smaller than target (many nodes)
+        if (currentZoom < targetZoom * 0.8) {
+          // Use the higher of current zoom * 1.5 or calculated target zoom
+          const finalZoom = Math.max(currentZoom * 1.5, targetZoom);
+          
+          cyRef.current.animate({
+            zoom: finalZoom,
+            center: {
+              eles: centerNode,
+            },
+          }, {
+            duration: 1300,
+            easing: 'ease-out-cubic',
+          });
+        } else {
+          // Graph is already big (few nodes), do a slight zoom out for dynamic feel
+          const finalZoom = currentZoom * 0.85; // Zoom out by 15%
+          
+          cyRef.current.animate({
+            zoom: finalZoom,
+            center: {
+              eles: centerNode,
+            },
+          }, {
+            duration: 1300,
+            easing: 'ease-out-cubic',
+          });
+        }
       }
     }, 100);
 

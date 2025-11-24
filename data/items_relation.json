@@ -680,10 +680,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Tempest&nbsp;I"
+            "name": "Tempest I"
           }
         ],
-        "output_level": "Tempest&nbsp;I"
+        "output_level": "Tempest I"
       },
       {
         "name": "Tempest",
@@ -697,10 +697,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Tempest&nbsp;II"
+            "name": "Tempest II"
           }
         ],
-        "output_level": "Tempest&nbsp;II"
+        "output_level": "Tempest II"
       },
       {
         "name": "Tempest",
@@ -714,10 +714,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Tempest&nbsp;III"
+            "name": "Tempest III"
           }
         ],
-        "output_level": "Tempest&nbsp;III"
+        "output_level": "Tempest III"
       },
       {
         "name": "Tempest",
@@ -731,10 +731,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Tempest&nbsp;IV"
+            "name": "Tempest IV"
           }
         ],
-        "output_level": "Tempest&nbsp;IV"
+        "output_level": "Tempest IV"
       },
       {
         "name": "Tempest",
@@ -1047,10 +1047,10 @@
           },
           {
             "type": "result_level",
-            "name": "Renegade&nbsp;I"
+            "name": "Renegade I"
           }
         ],
-        "input_level": "Renegade&nbsp;I"
+        "input_level": "Renegade I"
       },
       {
         "name": "Renegade",
@@ -1089,7 +1089,7 @@
             "name": "Gunsmith"
           }
         ],
-        "output_level": "Renegade&nbsp;III"
+        "output_level": "Renegade III"
       },
       {
         "name": "Renegade",
@@ -1154,10 +1154,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Renegade&nbsp;IV"
+            "name": "Renegade IV"
           }
         ],
-        "output_level": "Renegade&nbsp;IV"
+        "output_level": "Renegade IV"
       },
       {
         "name": "Renegade",
@@ -1223,11 +1223,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Bobcat&nbsp;I -> Bobcat&nbsp;II"
+            "name": "Bobcat I -> Bobcat II"
           }
         ],
-        "input_level": "Bobcat&nbsp;II",
-        "output_level": "Bobcat&nbsp;I"
+        "input_level": "Bobcat II",
+        "output_level": "Bobcat I"
       },
       {
         "name": "Bobcat",
@@ -1241,11 +1241,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Bobcat&nbsp;II -> Bobcat&nbsp;III"
+            "name": "Bobcat II -> Bobcat III"
           }
         ],
-        "input_level": "Bobcat&nbsp;III",
-        "output_level": "Bobcat&nbsp;II"
+        "input_level": "Bobcat III",
+        "output_level": "Bobcat II"
       },
       {
         "name": "Bobcat",
@@ -1259,11 +1259,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Bobcat&nbsp;III -> Bobcat&nbsp;IV"
+            "name": "Bobcat III -> Bobcat IV"
           }
         ],
-        "input_level": "Bobcat&nbsp;IV",
-        "output_level": "Bobcat&nbsp;III"
+        "input_level": "Bobcat IV",
+        "output_level": "Bobcat III"
       },
       {
         "name": "Bobcat",
@@ -1575,10 +1575,10 @@
           },
           {
             "type": "result_level",
-            "name": "Venator&nbsp;I"
+            "name": "Venator I"
           }
         ],
-        "input_level": "Venator&nbsp;I"
+        "input_level": "Venator I"
       },
       {
         "name": "Venator",
@@ -1591,7 +1591,7 @@
             "name": "Gunsmith"
           }
         ],
-        "output_level": "Venator&nbsp;I"
+        "output_level": "Venator I"
       },
       {
         "name": "Venator",
@@ -1604,7 +1604,7 @@
             "name": "Gunsmith"
           }
         ],
-        "output_level": "Venator&nbsp;II"
+        "output_level": "Venator II"
       },
       {
         "name": "Venator",
@@ -1631,10 +1631,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Venator&nbsp;I"
+            "name": "Venator I"
           }
         ],
-        "output_level": "Venator&nbsp;I"
+        "output_level": "Venator I"
       },
       {
         "name": "Venator",
@@ -1648,10 +1648,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Venator&nbsp;II"
+            "name": "Venator II"
           }
         ],
-        "output_level": "Venator&nbsp;II"
+        "output_level": "Venator II"
       },
       {
         "name": "Venator",
@@ -1665,10 +1665,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Venator&nbsp;III"
+            "name": "Venator III"
           }
         ],
-        "output_level": "Venator&nbsp;III"
+        "output_level": "Venator III"
       },
       {
         "name": "Venator",
@@ -1682,10 +1682,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Venator&nbsp;IV"
+            "name": "Venator IV"
           }
         ],
-        "output_level": "Venator&nbsp;IV"
+        "output_level": "Venator IV"
       },
       {
         "name": "Venator",
@@ -1755,10 +1755,10 @@
           },
           {
             "type": "result_level",
-            "name": "Torrente&nbsp;I"
+            "name": "Torrente I"
           }
         ],
-        "input_level": "Torrente&nbsp;I"
+        "input_level": "Torrente I"
       },
       {
         "name": "Torrente",
@@ -1772,10 +1772,10 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Torrente I -> Torrente&nbsp;II"
+            "name": "Torrente I -> Torrente II"
           }
         ],
-        "input_level": "Torrente&nbsp;II",
+        "input_level": "Torrente II",
         "output_level": "Torrente I"
       },
       {
@@ -1790,10 +1790,10 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Torrente II -> Torrente&nbsp;III"
+            "name": "Torrente II -> Torrente III"
           }
         ],
-        "input_level": "Torrente&nbsp;III",
+        "input_level": "Torrente III",
         "output_level": "Torrente II"
       },
       {
@@ -1808,10 +1808,10 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Torrente III -> Torrente&nbsp;IV"
+            "name": "Torrente III -> Torrente IV"
           }
         ],
-        "input_level": "Torrente&nbsp;IV",
+        "input_level": "Torrente IV",
         "output_level": "Torrente III"
       },
       {
@@ -1826,10 +1826,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Torrente&nbsp;I"
+            "name": "Torrente I"
           }
         ],
-        "output_level": "Torrente&nbsp;I"
+        "output_level": "Torrente I"
       },
       {
         "name": "Torrente",
@@ -1843,10 +1843,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Torrente&nbsp;II"
+            "name": "Torrente II"
           }
         ],
-        "output_level": "Torrente&nbsp;II"
+        "output_level": "Torrente II"
       },
       {
         "name": "Torrente",
@@ -1860,10 +1860,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Torrente&nbsp;III"
+            "name": "Torrente III"
           }
         ],
-        "output_level": "Torrente&nbsp;III"
+        "output_level": "Torrente III"
       },
       {
         "name": "Torrente",
@@ -1877,10 +1877,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Torrente&nbsp;IV"
+            "name": "Torrente IV"
           }
         ],
-        "output_level": "Torrente&nbsp;IV"
+        "output_level": "Torrente IV"
       },
       {
         "name": "Torrente",
@@ -9665,11 +9665,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Anvil&nbsp;II -> Anvil&nbsp;III"
+            "name": "Anvil II -> Anvil III"
           }
         ],
-        "input_level": "Anvil&nbsp;III",
-        "output_level": "Anvil&nbsp;II"
+        "input_level": "Anvil III",
+        "output_level": "Anvil II"
       },
       {
         "name": "Anvil",
@@ -9683,11 +9683,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Anvil&nbsp;III -> Anvil&nbsp;IV"
+            "name": "Anvil III -> Anvil IV"
           }
         ],
-        "input_level": "Anvil&nbsp;IV",
-        "output_level": "Anvil&nbsp;III"
+        "input_level": "Anvil IV",
+        "output_level": "Anvil III"
       },
       {
         "name": "Hullcracker",
@@ -10797,11 +10797,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Bobcat&nbsp;I -> Bobcat&nbsp;II"
+            "name": "Bobcat I -> Bobcat II"
           }
         ],
-        "input_level": "Bobcat&nbsp;II",
-        "output_level": "Bobcat&nbsp;I"
+        "input_level": "Bobcat II",
+        "output_level": "Bobcat I"
       },
       {
         "name": "Bobcat",
@@ -10815,11 +10815,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Bobcat&nbsp;II -> Bobcat&nbsp;III"
+            "name": "Bobcat II -> Bobcat III"
           }
         ],
-        "input_level": "Bobcat&nbsp;III",
-        "output_level": "Bobcat&nbsp;II"
+        "input_level": "Bobcat III",
+        "output_level": "Bobcat II"
       },
       {
         "name": "Bobcat",
@@ -10833,11 +10833,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Bobcat&nbsp;III -> Bobcat&nbsp;IV"
+            "name": "Bobcat III -> Bobcat IV"
           }
         ],
-        "input_level": "Bobcat&nbsp;IV",
-        "output_level": "Bobcat&nbsp;III"
+        "input_level": "Bobcat IV",
+        "output_level": "Bobcat III"
       },
       {
         "name": "Bobcat",
@@ -11138,10 +11138,10 @@
           },
           {
             "type": "result_level",
-            "name": "Venator&nbsp;I"
+            "name": "Venator I"
           }
         ],
-        "input_level": "Venator&nbsp;I"
+        "input_level": "Venator I"
       },
       {
         "name": "Looting Mk. 2",
@@ -12143,10 +12143,10 @@
           },
           {
             "type": "result_level",
-            "name": "Arpeggio&nbsp;I"
+            "name": "Arpeggio I"
           }
         ],
-        "input_level": "Arpeggio&nbsp;I"
+        "input_level": "Arpeggio I"
       },
       {
         "name": "Arpeggio",
@@ -12196,10 +12196,10 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Arpeggio III -> Arpeggio&nbsp;IV"
+            "name": "Arpeggio III -> Arpeggio IV"
           }
         ],
-        "input_level": "Arpeggio&nbsp;IV",
+        "input_level": "Arpeggio IV",
         "output_level": "Arpeggio III"
       },
       {
@@ -12382,11 +12382,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Stitcher&nbsp;III -> Stitcher&nbsp;IV"
+            "name": "Stitcher III -> Stitcher IV"
           }
         ],
-        "input_level": "Stitcher&nbsp;IV",
-        "output_level": "Stitcher&nbsp;III"
+        "input_level": "Stitcher IV",
+        "output_level": "Stitcher III"
       },
       {
         "name": "Stitcher",
@@ -12906,11 +12906,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Anvil&nbsp;I -> Anvil&nbsp;II"
+            "name": "Anvil I -> Anvil II"
           }
         ],
-        "input_level": "Anvil&nbsp;II",
-        "output_level": "Anvil&nbsp;I"
+        "input_level": "Anvil II",
+        "output_level": "Anvil I"
       },
       {
         "name": "Anvil",
@@ -12924,11 +12924,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Anvil&nbsp;II -> Anvil&nbsp;III"
+            "name": "Anvil II -> Anvil III"
           }
         ],
-        "input_level": "Anvil&nbsp;III",
-        "output_level": "Anvil&nbsp;II"
+        "input_level": "Anvil III",
+        "output_level": "Anvil II"
       },
       {
         "name": "Anvil",
@@ -12942,11 +12942,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Anvil&nbsp;III -> Anvil&nbsp;IV"
+            "name": "Anvil III -> Anvil IV"
           }
         ],
-        "input_level": "Anvil&nbsp;IV",
-        "output_level": "Anvil&nbsp;III"
+        "input_level": "Anvil IV",
+        "output_level": "Anvil III"
       },
       {
         "name": "Anvil",
@@ -13242,10 +13242,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Tempest&nbsp;I"
+            "name": "Tempest I"
           }
         ],
-        "output_level": "Tempest&nbsp;I"
+        "output_level": "Tempest I"
       },
       {
         "name": "Tempest",
@@ -13259,10 +13259,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Tempest&nbsp;II"
+            "name": "Tempest II"
           }
         ],
-        "output_level": "Tempest&nbsp;II"
+        "output_level": "Tempest II"
       },
       {
         "name": "Tempest",
@@ -13276,10 +13276,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Tempest&nbsp;III"
+            "name": "Tempest III"
           }
         ],
-        "output_level": "Tempest&nbsp;III"
+        "output_level": "Tempest III"
       },
       {
         "name": "Tempest",
@@ -13293,10 +13293,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Tempest&nbsp;IV"
+            "name": "Tempest IV"
           }
         ],
-        "output_level": "Tempest&nbsp;IV"
+        "output_level": "Tempest IV"
       },
       {
         "name": "Tempest",
@@ -13432,10 +13432,10 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Arpeggio III -> Arpeggio&nbsp;IV"
+            "name": "Arpeggio III -> Arpeggio IV"
           }
         ],
-        "input_level": "Arpeggio&nbsp;IV",
+        "input_level": "Arpeggio IV",
         "output_level": "Arpeggio III"
       },
       {
@@ -13450,10 +13450,10 @@
           },
           {
             "type": "result_level",
-            "name": "Renegade&nbsp;I"
+            "name": "Renegade I"
           }
         ],
-        "input_level": "Renegade&nbsp;I"
+        "input_level": "Renegade I"
       },
       {
         "name": "Renegade",
@@ -13492,7 +13492,7 @@
             "name": "Gunsmith"
           }
         ],
-        "output_level": "Renegade&nbsp;III"
+        "output_level": "Renegade III"
       },
       {
         "name": "Renegade",
@@ -13614,10 +13614,10 @@
           },
           {
             "type": "result_level",
-            "name": "Venator&nbsp;I"
+            "name": "Venator I"
           }
         ],
-        "input_level": "Venator&nbsp;I"
+        "input_level": "Venator I"
       },
       {
         "name": "Venator",
@@ -13630,7 +13630,7 @@
             "name": "Gunsmith"
           }
         ],
-        "output_level": "Venator&nbsp;I"
+        "output_level": "Venator I"
       },
       {
         "name": "Venator",
@@ -13643,7 +13643,7 @@
             "name": "Gunsmith"
           }
         ],
-        "output_level": "Venator&nbsp;II"
+        "output_level": "Venator II"
       },
       {
         "name": "Venator",
@@ -13670,10 +13670,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Venator&nbsp;I"
+            "name": "Venator I"
           }
         ],
-        "output_level": "Venator&nbsp;I"
+        "output_level": "Venator I"
       },
       {
         "name": "Venator",
@@ -13687,10 +13687,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Venator&nbsp;II"
+            "name": "Venator II"
           }
         ],
-        "output_level": "Venator&nbsp;II"
+        "output_level": "Venator II"
       },
       {
         "name": "Venator",
@@ -13704,10 +13704,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Venator&nbsp;III"
+            "name": "Venator III"
           }
         ],
-        "output_level": "Venator&nbsp;III"
+        "output_level": "Venator III"
       },
       {
         "name": "Venator",
@@ -13721,10 +13721,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Venator&nbsp;IV"
+            "name": "Venator IV"
           }
         ],
-        "output_level": "Venator&nbsp;IV"
+        "output_level": "Venator IV"
       },
       {
         "name": "Venator",
@@ -13846,10 +13846,10 @@
           },
           {
             "type": "result_level",
-            "name": "Torrente&nbsp;I"
+            "name": "Torrente I"
           }
         ],
-        "input_level": "Torrente&nbsp;I"
+        "input_level": "Torrente I"
       },
       {
         "name": "Torrente",
@@ -13863,10 +13863,10 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Torrente I -> Torrente&nbsp;II"
+            "name": "Torrente I -> Torrente II"
           }
         ],
-        "input_level": "Torrente&nbsp;II",
+        "input_level": "Torrente II",
         "output_level": "Torrente I"
       },
       {
@@ -13881,10 +13881,10 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Torrente II -> Torrente&nbsp;III"
+            "name": "Torrente II -> Torrente III"
           }
         ],
-        "input_level": "Torrente&nbsp;III",
+        "input_level": "Torrente III",
         "output_level": "Torrente II"
       },
       {
@@ -13899,10 +13899,10 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Torrente III -> Torrente&nbsp;IV"
+            "name": "Torrente III -> Torrente IV"
           }
         ],
-        "input_level": "Torrente&nbsp;IV",
+        "input_level": "Torrente IV",
         "output_level": "Torrente III"
       },
       {
@@ -13917,10 +13917,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Torrente&nbsp;I"
+            "name": "Torrente I"
           }
         ],
-        "output_level": "Torrente&nbsp;I"
+        "output_level": "Torrente I"
       },
       {
         "name": "Torrente",
@@ -13934,10 +13934,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Torrente&nbsp;II"
+            "name": "Torrente II"
           }
         ],
-        "output_level": "Torrente&nbsp;II"
+        "output_level": "Torrente II"
       },
       {
         "name": "Torrente",
@@ -13951,10 +13951,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Torrente&nbsp;III"
+            "name": "Torrente III"
           }
         ],
-        "output_level": "Torrente&nbsp;III"
+        "output_level": "Torrente III"
       },
       {
         "name": "Torrente",
@@ -13968,10 +13968,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Torrente&nbsp;IV"
+            "name": "Torrente IV"
           }
         ],
-        "output_level": "Torrente&nbsp;IV"
+        "output_level": "Torrente IV"
       },
       {
         "name": "Torrente",
@@ -15427,11 +15427,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Stitcher&nbsp;I -> Stitcher&nbsp;II"
+            "name": "Stitcher I -> Stitcher II"
           }
         ],
-        "input_level": "Stitcher&nbsp;II",
-        "output_level": "Stitcher&nbsp;I"
+        "input_level": "Stitcher II",
+        "output_level": "Stitcher I"
       },
       {
         "name": "Stitcher",
@@ -15445,11 +15445,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Stitcher&nbsp;II -> Stitcher&nbsp;III"
+            "name": "Stitcher II -> Stitcher III"
           }
         ],
-        "input_level": "Stitcher&nbsp;III",
-        "output_level": "Stitcher&nbsp;II"
+        "input_level": "Stitcher III",
+        "output_level": "Stitcher II"
       },
       {
         "name": "Stitcher",
@@ -16415,10 +16415,10 @@
           },
           {
             "type": "result_level",
-            "name": "Renegade&nbsp;I"
+            "name": "Renegade I"
           }
         ],
-        "input_level": "Renegade&nbsp;I"
+        "input_level": "Renegade I"
       },
       {
         "name": "Heavy Fuze Grenade",
@@ -19679,11 +19679,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Stitcher&nbsp;I -> Stitcher&nbsp;II"
+            "name": "Stitcher I -> Stitcher II"
           }
         ],
-        "input_level": "Stitcher&nbsp;II",
-        "output_level": "Stitcher&nbsp;I"
+        "input_level": "Stitcher II",
+        "output_level": "Stitcher I"
       },
       {
         "name": "Stitcher",
@@ -21550,10 +21550,10 @@
           },
           {
             "type": "result_level",
-            "name": "Arpeggio&nbsp;I"
+            "name": "Arpeggio I"
           }
         ],
-        "input_level": "Arpeggio&nbsp;I"
+        "input_level": "Arpeggio I"
       },
       {
         "name": "Arpeggio",
@@ -21879,11 +21879,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Stitcher&nbsp;II -> Stitcher&nbsp;III"
+            "name": "Stitcher II -> Stitcher III"
           }
         ],
-        "input_level": "Stitcher&nbsp;III",
-        "output_level": "Stitcher&nbsp;II"
+        "input_level": "Stitcher III",
+        "output_level": "Stitcher II"
       },
       {
         "name": "Stitcher",
@@ -21897,11 +21897,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Stitcher&nbsp;III -> Stitcher&nbsp;IV"
+            "name": "Stitcher III -> Stitcher IV"
           }
         ],
-        "input_level": "Stitcher&nbsp;IV",
-        "output_level": "Stitcher&nbsp;III"
+        "input_level": "Stitcher IV",
+        "output_level": "Stitcher III"
       },
       {
         "name": "Stitcher",
@@ -22567,11 +22567,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Anvil&nbsp;I -> Anvil&nbsp;II"
+            "name": "Anvil I -> Anvil II"
           }
         ],
-        "input_level": "Anvil&nbsp;II",
-        "output_level": "Anvil&nbsp;I"
+        "input_level": "Anvil II",
+        "output_level": "Anvil I"
       },
       {
         "name": "Anvil",
@@ -23566,10 +23566,10 @@
           },
           {
             "type": "result_level",
-            "name": "Torrente&nbsp;I"
+            "name": "Torrente I"
           }
         ],
-        "input_level": "Torrente&nbsp;I"
+        "input_level": "Torrente I"
       },
       {
         "name": "Shrapnel Grenade",
@@ -25485,10 +25485,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Tempest&nbsp;I"
+            "name": "Tempest I"
           }
         ],
-        "input_level": "Tempest&nbsp;I"
+        "input_level": "Tempest I"
       },
       {
         "name": "Medium Gun Parts",
@@ -25502,10 +25502,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Tempest&nbsp;I"
+            "name": "Tempest I"
           }
         ],
-        "input_level": "Tempest&nbsp;I"
+        "input_level": "Tempest I"
       },
       {
         "name": "Advanced Mechanical Components",
@@ -25519,10 +25519,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Tempest&nbsp;II"
+            "name": "Tempest II"
           }
         ],
-        "input_level": "Tempest&nbsp;II"
+        "input_level": "Tempest II"
       },
       {
         "name": "Medium Gun Parts",
@@ -25536,10 +25536,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Tempest&nbsp;II"
+            "name": "Tempest II"
           }
         ],
-        "input_level": "Tempest&nbsp;II"
+        "input_level": "Tempest II"
       },
       {
         "name": "Advanced Mechanical Components",
@@ -25553,10 +25553,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Tempest&nbsp;III"
+            "name": "Tempest III"
           }
         ],
-        "input_level": "Tempest&nbsp;III"
+        "input_level": "Tempest III"
       },
       {
         "name": "Medium Gun Parts",
@@ -25570,10 +25570,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Tempest&nbsp;III"
+            "name": "Tempest III"
           }
         ],
-        "input_level": "Tempest&nbsp;III"
+        "input_level": "Tempest III"
       },
       {
         "name": "Advanced Mechanical Components",
@@ -25587,10 +25587,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Tempest&nbsp;IV"
+            "name": "Tempest IV"
           }
         ],
-        "input_level": "Tempest&nbsp;IV"
+        "input_level": "Tempest IV"
       },
       {
         "name": "Medium Gun Parts",
@@ -25604,10 +25604,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Tempest&nbsp;IV"
+            "name": "Tempest IV"
           }
         ],
-        "input_level": "Tempest&nbsp;IV"
+        "input_level": "Tempest IV"
       },
       {
         "name": "Advanced Mechanical Components",
@@ -27566,10 +27566,10 @@
           },
           {
             "type": "result_level",
-            "name": "Arpeggio&nbsp;I"
+            "name": "Arpeggio I"
           }
         ],
-        "output_level": "Arpeggio&nbsp;I"
+        "output_level": "Arpeggio I"
       },
       {
         "name": "Simple Gun Parts",
@@ -27583,10 +27583,10 @@
           },
           {
             "type": "result_level",
-            "name": "Arpeggio&nbsp;I"
+            "name": "Arpeggio I"
           }
         ],
-        "output_level": "Arpeggio&nbsp;I"
+        "output_level": "Arpeggio I"
       },
       {
         "name": "Mechanical Components",
@@ -27714,11 +27714,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Arpeggio III -> Arpeggio&nbsp;IV"
+            "name": "Arpeggio III -> Arpeggio IV"
           }
         ],
         "input_level": "Arpeggio III",
-        "output_level": "Arpeggio&nbsp;IV"
+        "output_level": "Arpeggio IV"
       },
       {
         "name": "Medium Gun Parts",
@@ -27732,11 +27732,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Arpeggio III -> Arpeggio&nbsp;IV"
+            "name": "Arpeggio III -> Arpeggio IV"
           }
         ],
         "input_level": "Arpeggio III",
-        "output_level": "Arpeggio&nbsp;IV"
+        "output_level": "Arpeggio IV"
       },
       {
         "name": "Arpeggio",
@@ -27749,7 +27749,7 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Arpeggio III -> Arpeggio&nbsp;IV"
+            "name": "Arpeggio III -> Arpeggio IV"
           },
           {
             "type": "perks",
@@ -27757,7 +27757,7 @@
           }
         ],
         "input_level": "Arpeggio III",
-        "output_level": "Arpeggio&nbsp;IV"
+        "output_level": "Arpeggio IV"
       },
       {
         "name": "Mechanical Components",
@@ -28104,14 +28104,14 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Arpeggio III -> Arpeggio&nbsp;IV"
+            "name": "Arpeggio III -> Arpeggio IV"
           },
           {
             "type": "perks",
             "name": "60% Increased Fire Rate, 50% Reduced Reload Time, +30 Durability"
           }
         ],
-        "input_level": "Arpeggio&nbsp;IV",
+        "input_level": "Arpeggio IV",
         "output_level": "Arpeggio III"
       }
     ]
@@ -28742,10 +28742,10 @@
           },
           {
             "type": "result_level",
-            "name": "Renegade&nbsp;I"
+            "name": "Renegade I"
           }
         ],
-        "output_level": "Renegade&nbsp;I"
+        "output_level": "Renegade I"
       },
       {
         "name": "Medium Gun Parts",
@@ -28759,10 +28759,10 @@
           },
           {
             "type": "result_level",
-            "name": "Renegade&nbsp;I"
+            "name": "Renegade I"
           }
         ],
-        "output_level": "Renegade&nbsp;I"
+        "output_level": "Renegade I"
       },
       {
         "name": "Oil",
@@ -28776,10 +28776,10 @@
           },
           {
             "type": "result_level",
-            "name": "Renegade&nbsp;I"
+            "name": "Renegade I"
           }
         ],
-        "output_level": "Renegade&nbsp;I"
+        "output_level": "Renegade I"
       },
       {
         "name": "Advanced Mechanical Components",
@@ -28844,7 +28844,7 @@
             "name": "Gunsmith"
           }
         ],
-        "input_level": "Renegade&nbsp;III"
+        "input_level": "Renegade III"
       },
       {
         "name": "Medium Gun Parts",
@@ -28857,7 +28857,7 @@
             "name": "Gunsmith"
           }
         ],
-        "input_level": "Renegade&nbsp;III"
+        "input_level": "Renegade III"
       },
       {
         "name": "Advanced Mechanical Components",
@@ -28922,10 +28922,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Renegade&nbsp;IV"
+            "name": "Renegade IV"
           }
         ],
-        "input_level": "Renegade&nbsp;IV"
+        "input_level": "Renegade IV"
       },
       {
         "name": "Advanced Mechanical Components",
@@ -29262,11 +29262,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Stitcher&nbsp;I -> Stitcher&nbsp;II"
+            "name": "Stitcher I -> Stitcher II"
           }
         ],
-        "input_level": "Stitcher&nbsp;I",
-        "output_level": "Stitcher&nbsp;II"
+        "input_level": "Stitcher I",
+        "output_level": "Stitcher II"
       },
       {
         "name": "Rubber Parts",
@@ -29280,11 +29280,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Stitcher&nbsp;I -> Stitcher&nbsp;II"
+            "name": "Stitcher I -> Stitcher II"
           }
         ],
-        "input_level": "Stitcher&nbsp;I",
-        "output_level": "Stitcher&nbsp;II"
+        "input_level": "Stitcher I",
+        "output_level": "Stitcher II"
       },
       {
         "name": "Stitcher",
@@ -29297,15 +29297,15 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Stitcher&nbsp;I -> Stitcher&nbsp;II"
+            "name": "Stitcher I -> Stitcher II"
           },
           {
             "type": "perks",
             "name": "16.6% Reduced Horizontal Recoil, 13% Reduced Reload Time, +10 Durability"
           }
         ],
-        "input_level": "Stitcher&nbsp;I",
-        "output_level": "Stitcher&nbsp;II"
+        "input_level": "Stitcher I",
+        "output_level": "Stitcher II"
       },
       {
         "name": "Metal Parts",
@@ -29319,11 +29319,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Stitcher&nbsp;II -> Stitcher&nbsp;III"
+            "name": "Stitcher II -> Stitcher III"
           }
         ],
-        "input_level": "Stitcher&nbsp;II",
-        "output_level": "Stitcher&nbsp;III"
+        "input_level": "Stitcher II",
+        "output_level": "Stitcher III"
       },
       {
         "name": "Simple Gun Parts",
@@ -29337,11 +29337,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Stitcher&nbsp;II -> Stitcher&nbsp;III"
+            "name": "Stitcher II -> Stitcher III"
           }
         ],
-        "input_level": "Stitcher&nbsp;II",
-        "output_level": "Stitcher&nbsp;III"
+        "input_level": "Stitcher II",
+        "output_level": "Stitcher III"
       },
       {
         "name": "Stitcher",
@@ -29354,15 +29354,15 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Stitcher&nbsp;II -> Stitcher&nbsp;III"
+            "name": "Stitcher II -> Stitcher III"
           },
           {
             "type": "perks",
             "name": "33.3% Reduced Horizontal Recoil, 26% Reduced Reload Time, +20 Durability"
           }
         ],
-        "input_level": "Stitcher&nbsp;II",
-        "output_level": "Stitcher&nbsp;III"
+        "input_level": "Stitcher II",
+        "output_level": "Stitcher III"
       },
       {
         "name": "Mechanical Components",
@@ -29376,11 +29376,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Stitcher&nbsp;III -> Stitcher&nbsp;IV"
+            "name": "Stitcher III -> Stitcher IV"
           }
         ],
-        "input_level": "Stitcher&nbsp;III",
-        "output_level": "Stitcher&nbsp;IV"
+        "input_level": "Stitcher III",
+        "output_level": "Stitcher IV"
       },
       {
         "name": "Simple Gun Parts",
@@ -29394,11 +29394,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Stitcher&nbsp;III -> Stitcher&nbsp;IV"
+            "name": "Stitcher III -> Stitcher IV"
           }
         ],
-        "input_level": "Stitcher&nbsp;III",
-        "output_level": "Stitcher&nbsp;IV"
+        "input_level": "Stitcher III",
+        "output_level": "Stitcher IV"
       },
       {
         "name": "Stitcher",
@@ -29411,15 +29411,15 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Stitcher&nbsp;III -> Stitcher&nbsp;IV"
+            "name": "Stitcher III -> Stitcher IV"
           },
           {
             "type": "perks",
             "name": "50% Reduced Horizontal Recoil, 40% Reduced Reload Time, +30 Durability"
           }
         ],
-        "input_level": "Stitcher&nbsp;III",
-        "output_level": "Stitcher&nbsp;IV"
+        "input_level": "Stitcher III",
+        "output_level": "Stitcher IV"
       },
       {
         "name": "Metal Parts",
@@ -29724,15 +29724,15 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Stitcher&nbsp;I -> Stitcher&nbsp;II"
+            "name": "Stitcher I -> Stitcher II"
           },
           {
             "type": "perks",
             "name": "16.6% Reduced Horizontal Recoil, 13% Reduced Reload Time, +10 Durability"
           }
         ],
-        "input_level": "Stitcher&nbsp;II",
-        "output_level": "Stitcher&nbsp;I"
+        "input_level": "Stitcher II",
+        "output_level": "Stitcher I"
       },
       {
         "name": "Stitcher",
@@ -29745,15 +29745,15 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Stitcher&nbsp;II -> Stitcher&nbsp;III"
+            "name": "Stitcher II -> Stitcher III"
           },
           {
             "type": "perks",
             "name": "33.3% Reduced Horizontal Recoil, 26% Reduced Reload Time, +20 Durability"
           }
         ],
-        "input_level": "Stitcher&nbsp;III",
-        "output_level": "Stitcher&nbsp;II"
+        "input_level": "Stitcher III",
+        "output_level": "Stitcher II"
       },
       {
         "name": "Stitcher",
@@ -29766,15 +29766,15 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Stitcher&nbsp;III -> Stitcher&nbsp;IV"
+            "name": "Stitcher III -> Stitcher IV"
           },
           {
             "type": "perks",
             "name": "50% Reduced Horizontal Recoil, 40% Reduced Reload Time, +30 Durability"
           }
         ],
-        "input_level": "Stitcher&nbsp;IV",
-        "output_level": "Stitcher&nbsp;III"
+        "input_level": "Stitcher IV",
+        "output_level": "Stitcher III"
       }
     ]
   },
@@ -29888,11 +29888,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Bobcat&nbsp;I -> Bobcat&nbsp;II"
+            "name": "Bobcat I -> Bobcat II"
           }
         ],
-        "input_level": "Bobcat&nbsp;I",
-        "output_level": "Bobcat&nbsp;II"
+        "input_level": "Bobcat I",
+        "output_level": "Bobcat II"
       },
       {
         "name": "Light Gun Parts",
@@ -29906,11 +29906,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Bobcat&nbsp;I -> Bobcat&nbsp;II"
+            "name": "Bobcat I -> Bobcat II"
           }
         ],
-        "input_level": "Bobcat&nbsp;I",
-        "output_level": "Bobcat&nbsp;II"
+        "input_level": "Bobcat I",
+        "output_level": "Bobcat II"
       },
       {
         "name": "Bobcat",
@@ -29923,15 +29923,15 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Bobcat&nbsp;I -> Bobcat&nbsp;II"
+            "name": "Bobcat I -> Bobcat II"
           },
           {
             "type": "perks",
             "name": "15% Reduced Max Shot Dispersion, 15% Reduced Horizontal Recoil, 13% Reduced Reload Time, +10 Durability"
           }
         ],
-        "input_level": "Bobcat&nbsp;I",
-        "output_level": "Bobcat&nbsp;II"
+        "input_level": "Bobcat I",
+        "output_level": "Bobcat II"
       },
       {
         "name": "Advanced Mechanical Components",
@@ -29945,11 +29945,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Bobcat&nbsp;II -> Bobcat&nbsp;III"
+            "name": "Bobcat II -> Bobcat III"
           }
         ],
-        "input_level": "Bobcat&nbsp;II",
-        "output_level": "Bobcat&nbsp;III"
+        "input_level": "Bobcat II",
+        "output_level": "Bobcat III"
       },
       {
         "name": "Light Gun Parts",
@@ -29963,11 +29963,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Bobcat&nbsp;II -> Bobcat&nbsp;III"
+            "name": "Bobcat II -> Bobcat III"
           }
         ],
-        "input_level": "Bobcat&nbsp;II",
-        "output_level": "Bobcat&nbsp;III"
+        "input_level": "Bobcat II",
+        "output_level": "Bobcat III"
       },
       {
         "name": "Bobcat",
@@ -29980,15 +29980,15 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Bobcat&nbsp;II -> Bobcat&nbsp;III"
+            "name": "Bobcat II -> Bobcat III"
           },
           {
             "type": "perks",
             "name": "30% Reduced Max Shot Dispersion, 30% Reduced Horizontal Recoil, 26% Reduced Reload Time, +20 Durability"
           }
         ],
-        "input_level": "Bobcat&nbsp;II",
-        "output_level": "Bobcat&nbsp;III"
+        "input_level": "Bobcat II",
+        "output_level": "Bobcat III"
       },
       {
         "name": "Advanced Mechanical Components",
@@ -30002,11 +30002,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Bobcat&nbsp;III -> Bobcat&nbsp;IV"
+            "name": "Bobcat III -> Bobcat IV"
           }
         ],
-        "input_level": "Bobcat&nbsp;III",
-        "output_level": "Bobcat&nbsp;IV"
+        "input_level": "Bobcat III",
+        "output_level": "Bobcat IV"
       },
       {
         "name": "Light Gun Parts",
@@ -30020,11 +30020,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Bobcat&nbsp;III -> Bobcat&nbsp;IV"
+            "name": "Bobcat III -> Bobcat IV"
           }
         ],
-        "input_level": "Bobcat&nbsp;III",
-        "output_level": "Bobcat&nbsp;IV"
+        "input_level": "Bobcat III",
+        "output_level": "Bobcat IV"
       },
       {
         "name": "Bobcat",
@@ -30037,15 +30037,15 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Bobcat&nbsp;III -> Bobcat&nbsp;IV"
+            "name": "Bobcat III -> Bobcat IV"
           },
           {
             "type": "perks",
             "name": "50% Reduced Max Shot Dispersion, 45% Reduced Horizontal Recoil, 40% Reduced Reload Time, +30 Durability"
           }
         ],
-        "input_level": "Bobcat&nbsp;III",
-        "output_level": "Bobcat&nbsp;IV"
+        "input_level": "Bobcat III",
+        "output_level": "Bobcat IV"
       },
       {
         "name": "Advanced Mechanical Components",
@@ -30350,15 +30350,15 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Bobcat&nbsp;I -> Bobcat&nbsp;II"
+            "name": "Bobcat I -> Bobcat II"
           },
           {
             "type": "perks",
             "name": "15% Reduced Max Shot Dispersion, 15% Reduced Horizontal Recoil, 13% Reduced Reload Time, +10 Durability"
           }
         ],
-        "input_level": "Bobcat&nbsp;II",
-        "output_level": "Bobcat&nbsp;I"
+        "input_level": "Bobcat II",
+        "output_level": "Bobcat I"
       },
       {
         "name": "Bobcat",
@@ -30371,15 +30371,15 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Bobcat&nbsp;II -> Bobcat&nbsp;III"
+            "name": "Bobcat II -> Bobcat III"
           },
           {
             "type": "perks",
             "name": "30% Reduced Max Shot Dispersion, 30% Reduced Horizontal Recoil, 26% Reduced Reload Time, +20 Durability"
           }
         ],
-        "input_level": "Bobcat&nbsp;III",
-        "output_level": "Bobcat&nbsp;II"
+        "input_level": "Bobcat III",
+        "output_level": "Bobcat II"
       },
       {
         "name": "Bobcat",
@@ -30392,15 +30392,15 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Bobcat&nbsp;III -> Bobcat&nbsp;IV"
+            "name": "Bobcat III -> Bobcat IV"
           },
           {
             "type": "perks",
             "name": "50% Reduced Max Shot Dispersion, 45% Reduced Horizontal Recoil, 40% Reduced Reload Time, +30 Durability"
           }
         ],
-        "input_level": "Bobcat&nbsp;IV",
-        "output_level": "Bobcat&nbsp;III"
+        "input_level": "Bobcat IV",
+        "output_level": "Bobcat III"
       }
     ]
   },
@@ -32897,11 +32897,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Anvil&nbsp;I -> Anvil&nbsp;II"
+            "name": "Anvil I -> Anvil II"
           }
         ],
-        "input_level": "Anvil&nbsp;I",
-        "output_level": "Anvil&nbsp;II"
+        "input_level": "Anvil I",
+        "output_level": "Anvil II"
       },
       {
         "name": "Simple Gun Parts",
@@ -32915,11 +32915,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Anvil&nbsp;I -> Anvil&nbsp;II"
+            "name": "Anvil I -> Anvil II"
           }
         ],
-        "input_level": "Anvil&nbsp;I",
-        "output_level": "Anvil&nbsp;II"
+        "input_level": "Anvil I",
+        "output_level": "Anvil II"
       },
       {
         "name": "Anvil",
@@ -32932,15 +32932,15 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Anvil&nbsp;I -> Anvil&nbsp;II"
+            "name": "Anvil I -> Anvil II"
           },
           {
             "type": "perks",
             "name": "6.5% Reduced Dispersion Recovery Time, 25% Increased Fire Rate, +10 Durability"
           }
         ],
-        "input_level": "Anvil&nbsp;I",
-        "output_level": "Anvil&nbsp;II"
+        "input_level": "Anvil I",
+        "output_level": "Anvil II"
       },
       {
         "name": "Mechanical Components",
@@ -32954,11 +32954,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Anvil&nbsp;II -> Anvil&nbsp;III"
+            "name": "Anvil II -> Anvil III"
           }
         ],
-        "input_level": "Anvil&nbsp;II",
-        "output_level": "Anvil&nbsp;III"
+        "input_level": "Anvil II",
+        "output_level": "Anvil III"
       },
       {
         "name": "Heavy Gun Parts",
@@ -32972,11 +32972,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Anvil&nbsp;II -> Anvil&nbsp;III"
+            "name": "Anvil II -> Anvil III"
           }
         ],
-        "input_level": "Anvil&nbsp;II",
-        "output_level": "Anvil&nbsp;III"
+        "input_level": "Anvil II",
+        "output_level": "Anvil III"
       },
       {
         "name": "Anvil",
@@ -32989,15 +32989,15 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Anvil&nbsp;II -> Anvil&nbsp;III"
+            "name": "Anvil II -> Anvil III"
           },
           {
             "type": "perks",
             "name": "12.5% Reduced Dispersion Recovery Time, 50% Increased Fire Rate, +20 Durability"
           }
         ],
-        "input_level": "Anvil&nbsp;II",
-        "output_level": "Anvil&nbsp;III"
+        "input_level": "Anvil II",
+        "output_level": "Anvil III"
       },
       {
         "name": "Mechanical Components",
@@ -33011,11 +33011,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Anvil&nbsp;III -> Anvil&nbsp;IV"
+            "name": "Anvil III -> Anvil IV"
           }
         ],
-        "input_level": "Anvil&nbsp;III",
-        "output_level": "Anvil&nbsp;IV"
+        "input_level": "Anvil III",
+        "output_level": "Anvil IV"
       },
       {
         "name": "Heavy Gun Parts",
@@ -33029,11 +33029,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Anvil&nbsp;III -> Anvil&nbsp;IV"
+            "name": "Anvil III -> Anvil IV"
           }
         ],
-        "input_level": "Anvil&nbsp;III",
-        "output_level": "Anvil&nbsp;IV"
+        "input_level": "Anvil III",
+        "output_level": "Anvil IV"
       },
       {
         "name": "Anvil",
@@ -33046,15 +33046,15 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Anvil&nbsp;III -> Anvil&nbsp;IV"
+            "name": "Anvil III -> Anvil IV"
           },
           {
             "type": "perks",
             "name": "18.75% Reduced Dispersion Recovery Time, 75% Increased Fire Rate, +30 Durability"
           }
         ],
-        "input_level": "Anvil&nbsp;III",
-        "output_level": "Anvil&nbsp;IV"
+        "input_level": "Anvil III",
+        "output_level": "Anvil IV"
       },
       {
         "name": "Mechanical Components",
@@ -33359,15 +33359,15 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Anvil&nbsp;I -> Anvil&nbsp;II"
+            "name": "Anvil I -> Anvil II"
           },
           {
             "type": "perks",
             "name": "6.5% Reduced Dispersion Recovery Time, 25% Increased Fire Rate, +10 Durability"
           }
         ],
-        "input_level": "Anvil&nbsp;II",
-        "output_level": "Anvil&nbsp;I"
+        "input_level": "Anvil II",
+        "output_level": "Anvil I"
       },
       {
         "name": "Anvil",
@@ -33380,15 +33380,15 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Anvil&nbsp;II -> Anvil&nbsp;III"
+            "name": "Anvil II -> Anvil III"
           },
           {
             "type": "perks",
             "name": "12.5% Reduced Dispersion Recovery Time, 50% Increased Fire Rate, +20 Durability"
           }
         ],
-        "input_level": "Anvil&nbsp;III",
-        "output_level": "Anvil&nbsp;II"
+        "input_level": "Anvil III",
+        "output_level": "Anvil II"
       },
       {
         "name": "Anvil",
@@ -33401,15 +33401,15 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Anvil&nbsp;III -> Anvil&nbsp;IV"
+            "name": "Anvil III -> Anvil IV"
           },
           {
             "type": "perks",
             "name": "18.75% Reduced Dispersion Recovery Time, 75% Increased Fire Rate, +30 Durability"
           }
         ],
-        "input_level": "Anvil&nbsp;IV",
-        "output_level": "Anvil&nbsp;III"
+        "input_level": "Anvil IV",
+        "output_level": "Anvil III"
       }
     ]
   },
@@ -33465,10 +33465,10 @@
           },
           {
             "type": "result_level",
-            "name": "Venator&nbsp;I"
+            "name": "Venator I"
           }
         ],
-        "output_level": "Venator&nbsp;I"
+        "output_level": "Venator I"
       },
       {
         "name": "Medium Gun Parts",
@@ -33486,10 +33486,10 @@
           },
           {
             "type": "result_level",
-            "name": "Venator&nbsp;I"
+            "name": "Venator I"
           }
         ],
-        "output_level": "Venator&nbsp;I"
+        "output_level": "Venator I"
       },
       {
         "name": "Magnet",
@@ -33507,10 +33507,10 @@
           },
           {
             "type": "result_level",
-            "name": "Venator&nbsp;I"
+            "name": "Venator I"
           }
         ],
-        "output_level": "Venator&nbsp;I"
+        "output_level": "Venator I"
       },
       {
         "name": "Advanced Mechanical Components",
@@ -33523,7 +33523,7 @@
             "name": "Gunsmith"
           }
         ],
-        "input_level": "Venator&nbsp;I"
+        "input_level": "Venator I"
       },
       {
         "name": "Medium Gun Parts",
@@ -33536,7 +33536,7 @@
             "name": "Gunsmith"
           }
         ],
-        "input_level": "Venator&nbsp;I"
+        "input_level": "Venator I"
       },
       {
         "name": "Advanced Mechanical Components",
@@ -33549,7 +33549,7 @@
             "name": "Gunsmith"
           }
         ],
-        "input_level": "Venator&nbsp;II"
+        "input_level": "Venator II"
       },
       {
         "name": "Medium Gun Parts",
@@ -33562,7 +33562,7 @@
             "name": "Gunsmith"
           }
         ],
-        "input_level": "Venator&nbsp;II"
+        "input_level": "Venator II"
       },
       {
         "name": "Advanced Mechanical Components",
@@ -33602,10 +33602,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Venator&nbsp;I"
+            "name": "Venator I"
           }
         ],
-        "input_level": "Venator&nbsp;I"
+        "input_level": "Venator I"
       },
       {
         "name": "Medium Gun Parts",
@@ -33619,10 +33619,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Venator&nbsp;I"
+            "name": "Venator I"
           }
         ],
-        "input_level": "Venator&nbsp;I"
+        "input_level": "Venator I"
       },
       {
         "name": "Advanced Mechanical Components",
@@ -33636,10 +33636,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Venator&nbsp;II"
+            "name": "Venator II"
           }
         ],
-        "input_level": "Venator&nbsp;II"
+        "input_level": "Venator II"
       },
       {
         "name": "Medium Gun Parts",
@@ -33653,10 +33653,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Venator&nbsp;II"
+            "name": "Venator II"
           }
         ],
-        "input_level": "Venator&nbsp;II"
+        "input_level": "Venator II"
       },
       {
         "name": "Advanced Mechanical Components",
@@ -33670,10 +33670,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Venator&nbsp;III"
+            "name": "Venator III"
           }
         ],
-        "input_level": "Venator&nbsp;III"
+        "input_level": "Venator III"
       },
       {
         "name": "Medium Gun Parts",
@@ -33687,10 +33687,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Venator&nbsp;III"
+            "name": "Venator III"
           }
         ],
-        "input_level": "Venator&nbsp;III"
+        "input_level": "Venator III"
       },
       {
         "name": "Advanced Mechanical Components",
@@ -33704,10 +33704,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Venator&nbsp;IV"
+            "name": "Venator IV"
           }
         ],
-        "input_level": "Venator&nbsp;IV"
+        "input_level": "Venator IV"
       },
       {
         "name": "Medium Gun Parts",
@@ -33721,10 +33721,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Venator&nbsp;IV"
+            "name": "Venator IV"
           }
         ],
-        "input_level": "Venator&nbsp;IV"
+        "input_level": "Venator IV"
       },
       {
         "name": "Advanced Mechanical Components",
@@ -33935,10 +33935,10 @@
           },
           {
             "type": "result_level",
-            "name": "Torrente&nbsp;I"
+            "name": "Torrente I"
           }
         ],
-        "output_level": "Torrente&nbsp;I"
+        "output_level": "Torrente I"
       },
       {
         "name": "Medium Gun Parts",
@@ -33956,10 +33956,10 @@
           },
           {
             "type": "result_level",
-            "name": "Torrente&nbsp;I"
+            "name": "Torrente I"
           }
         ],
-        "output_level": "Torrente&nbsp;I"
+        "output_level": "Torrente I"
       },
       {
         "name": "Steel Spring",
@@ -33977,10 +33977,10 @@
           },
           {
             "type": "result_level",
-            "name": "Torrente&nbsp;I"
+            "name": "Torrente I"
           }
         ],
-        "output_level": "Torrente&nbsp;I"
+        "output_level": "Torrente I"
       },
       {
         "name": "Advanced Mechanical Components",
@@ -33994,11 +33994,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Torrente I -> Torrente&nbsp;II"
+            "name": "Torrente I -> Torrente II"
           }
         ],
         "input_level": "Torrente I",
-        "output_level": "Torrente&nbsp;II"
+        "output_level": "Torrente II"
       },
       {
         "name": "Medium Gun Parts",
@@ -34012,11 +34012,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Torrente I -> Torrente&nbsp;II"
+            "name": "Torrente I -> Torrente II"
           }
         ],
         "input_level": "Torrente I",
-        "output_level": "Torrente&nbsp;II"
+        "output_level": "Torrente II"
       },
       {
         "name": "Torrente",
@@ -34029,7 +34029,7 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Torrente I -> Torrente&nbsp;II"
+            "name": "Torrente I -> Torrente II"
           },
           {
             "type": "perks",
@@ -34037,7 +34037,7 @@
           }
         ],
         "input_level": "Torrente I",
-        "output_level": "Torrente&nbsp;II"
+        "output_level": "Torrente II"
       },
       {
         "name": "Advanced Mechanical Components",
@@ -34051,11 +34051,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Torrente II -> Torrente&nbsp;III"
+            "name": "Torrente II -> Torrente III"
           }
         ],
         "input_level": "Torrente II",
-        "output_level": "Torrente&nbsp;III"
+        "output_level": "Torrente III"
       },
       {
         "name": "Medium Gun Parts",
@@ -34069,11 +34069,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Torrente II -> Torrente&nbsp;III"
+            "name": "Torrente II -> Torrente III"
           }
         ],
         "input_level": "Torrente II",
-        "output_level": "Torrente&nbsp;III"
+        "output_level": "Torrente III"
       },
       {
         "name": "Torrente",
@@ -34086,7 +34086,7 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Torrente II -> Torrente&nbsp;III"
+            "name": "Torrente II -> Torrente III"
           },
           {
             "type": "perks",
@@ -34094,7 +34094,7 @@
           }
         ],
         "input_level": "Torrente II",
-        "output_level": "Torrente&nbsp;III"
+        "output_level": "Torrente III"
       },
       {
         "name": "Advanced Mechanical Components",
@@ -34108,11 +34108,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Torrente III -> Torrente&nbsp;IV"
+            "name": "Torrente III -> Torrente IV"
           }
         ],
         "input_level": "Torrente III",
-        "output_level": "Torrente&nbsp;IV"
+        "output_level": "Torrente IV"
       },
       {
         "name": "Medium Gun Parts",
@@ -34126,11 +34126,11 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Torrente III -> Torrente&nbsp;IV"
+            "name": "Torrente III -> Torrente IV"
           }
         ],
         "input_level": "Torrente III",
-        "output_level": "Torrente&nbsp;IV"
+        "output_level": "Torrente IV"
       },
       {
         "name": "Torrente",
@@ -34143,7 +34143,7 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Torrente III -> Torrente&nbsp;IV"
+            "name": "Torrente III -> Torrente IV"
           },
           {
             "type": "perks",
@@ -34151,7 +34151,7 @@
           }
         ],
         "input_level": "Torrente III",
-        "output_level": "Torrente&nbsp;IV"
+        "output_level": "Torrente IV"
       },
       {
         "name": "Advanced Mechanical Components",
@@ -34165,10 +34165,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Torrente&nbsp;I"
+            "name": "Torrente I"
           }
         ],
-        "input_level": "Torrente&nbsp;I"
+        "input_level": "Torrente I"
       },
       {
         "name": "Medium Gun Parts",
@@ -34182,10 +34182,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Torrente&nbsp;I"
+            "name": "Torrente I"
           }
         ],
-        "input_level": "Torrente&nbsp;I"
+        "input_level": "Torrente I"
       },
       {
         "name": "Advanced Mechanical Components",
@@ -34199,10 +34199,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Torrente&nbsp;II"
+            "name": "Torrente II"
           }
         ],
-        "input_level": "Torrente&nbsp;II"
+        "input_level": "Torrente II"
       },
       {
         "name": "Medium Gun Parts",
@@ -34216,10 +34216,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Torrente&nbsp;II"
+            "name": "Torrente II"
           }
         ],
-        "input_level": "Torrente&nbsp;II"
+        "input_level": "Torrente II"
       },
       {
         "name": "Advanced Mechanical Components",
@@ -34233,10 +34233,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Torrente&nbsp;III"
+            "name": "Torrente III"
           }
         ],
-        "input_level": "Torrente&nbsp;III"
+        "input_level": "Torrente III"
       },
       {
         "name": "Medium Gun Parts",
@@ -34250,10 +34250,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Torrente&nbsp;III"
+            "name": "Torrente III"
           }
         ],
-        "input_level": "Torrente&nbsp;III"
+        "input_level": "Torrente III"
       },
       {
         "name": "Advanced Mechanical Components",
@@ -34267,10 +34267,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Torrente&nbsp;IV"
+            "name": "Torrente IV"
           }
         ],
-        "input_level": "Torrente&nbsp;IV"
+        "input_level": "Torrente IV"
       },
       {
         "name": "Medium Gun Parts",
@@ -34284,10 +34284,10 @@
           },
           {
             "type": "repair_level",
-            "name": "Torrente&nbsp;IV"
+            "name": "Torrente IV"
           }
         ],
-        "input_level": "Torrente&nbsp;IV"
+        "input_level": "Torrente IV"
       },
       {
         "name": "Advanced Mechanical Components",
@@ -34456,14 +34456,14 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Torrente I -> Torrente&nbsp;II"
+            "name": "Torrente I -> Torrente II"
           },
           {
             "type": "perks",
             "name": "+10 Magazine Size, 15% Reduced Reload Time, +10 Durability"
           }
         ],
-        "input_level": "Torrente&nbsp;II",
+        "input_level": "Torrente II",
         "output_level": "Torrente I"
       },
       {
@@ -34477,14 +34477,14 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Torrente II -> Torrente&nbsp;III"
+            "name": "Torrente II -> Torrente III"
           },
           {
             "type": "perks",
             "name": "+20 Magazine Size, 30% Reduced Reload Time, +20 Durability"
           }
         ],
-        "input_level": "Torrente&nbsp;III",
+        "input_level": "Torrente III",
         "output_level": "Torrente II"
       },
       {
@@ -34498,14 +34498,14 @@
           },
           {
             "type": "upgrade_level",
-            "name": "Torrente III -> Torrente&nbsp;IV"
+            "name": "Torrente III -> Torrente IV"
           },
           {
             "type": "perks",
             "name": "+30 Magazine Size, 45% Reduced Reload Time, +30 Durability"
           }
         ],
-        "input_level": "Torrente&nbsp;IV",
+        "input_level": "Torrente IV",
         "output_level": "Torrente III"
       }
     ]
