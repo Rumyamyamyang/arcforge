@@ -152,6 +152,10 @@ export default function CraftingTree() {
 
     // Create left nodes (inputs)
     let leftIdx = 0;
+    const totalLeftNodes = leftGrouped.size;
+    const leftIsEven = totalLeftNodes % 2 === 0;
+    const leftMiddle = totalLeftNodes / 2;
+    
     leftGrouped.forEach((edges, itemName) => {
       const nodeId = `left-${itemName}`;
       const relatedItem = itemsLookup.get(itemName);
@@ -173,12 +177,19 @@ export default function CraftingTree() {
       // Create edge from left to center with combined labels
       const edgeLabels = edges.map(formatEdgeLabel).join('\n');
       
+      // Calculate curvature: items above middle curve one way, below curve opposite way
+      // If even number of items: no item gets 0 curvature
+      // If odd number of items: middle item gets 0 curvature
+      const curvature = leftIsEven 
+        ? (leftIdx < leftMiddle ? -CURVATURE : CURVATURE)
+        : (leftIdx < Math.floor(leftMiddle) ? -CURVATURE : leftIdx > Math.floor(leftMiddle) ? CURVATURE : 0);
+      
       elements.push({
         data: {
           source: nodeId,
           target: centerId,
           label: edgeLabels,
-          curvature: leftIdx % 3 === 0 ? -CURVATURE : leftIdx % 3 === 1 ? 0 : CURVATURE,
+          curvature: curvature,
         }
       });
       leftIdx++;
@@ -186,6 +197,10 @@ export default function CraftingTree() {
 
     // Create right nodes (outputs)
     let rightIdx = 0;
+    const totalRightNodes = rightGrouped.size;
+    const rightIsEven = totalRightNodes % 2 === 0;
+    const rightMiddle = totalRightNodes / 2;
+    
     rightGrouped.forEach((edges, itemName) => {
       const nodeId = `right-${itemName}`;
       const relatedItem = itemsLookup.get(itemName);
@@ -207,12 +222,19 @@ export default function CraftingTree() {
       // Create edge from center to right with combined labels
       const edgeLabels = edges.map(formatEdgeLabel).join('\n');
       
+      // Calculate curvature: items above middle curve one way, below curve opposite way
+      // If even number of items: no item gets 0 curvature
+      // If odd number of items: middle item gets 0 curvature
+      const curvature = rightIsEven 
+        ? (rightIdx < rightMiddle ? CURVATURE : -CURVATURE)
+        : (rightIdx < Math.floor(rightMiddle) ? CURVATURE : rightIdx > Math.floor(rightMiddle) ? -CURVATURE : 0);
+      
       elements.push({
         data: {
           source: centerId,
           target: nodeId,
           label: edgeLabels,
-          curvature: rightIdx % 3 === 0 ? -CURVATURE : rightIdx % 3 === 1 ? 0 : CURVATURE,
+          curvature: curvature,
         }
       });
       rightIdx++;
@@ -382,7 +404,7 @@ export default function CraftingTree() {
           const centerX = 700;
           const rightX = 1150;
           const centerY = 400;
-          const spacing = 120;
+          const spacing = 180;
           
           // Center node
           if (nodeType === 'center') {
