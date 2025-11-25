@@ -5705,10 +5705,10 @@
           },
           {
             "type": "repair_level",
-            "name": "{{PAGENAME}}"
+            "name": "Jupiter"
           }
         ],
-        "output_level": "{{PAGENAME}}"
+        "output_level": "Jupiter"
       },
       {
         "name": "Jupiter",
@@ -5744,10 +5744,10 @@
           },
           {
             "type": "repair_level",
-            "name": "{{PAGENAME}}"
+            "name": "Equalizer"
           }
         ],
-        "output_level": "{{PAGENAME}}"
+        "output_level": "Equalizer"
       },
       {
         "name": "Equalizer",
@@ -11736,10 +11736,10 @@
           },
           {
             "type": "repair_level",
-            "name": "{{PAGENAME}}"
+            "name": "Jupiter"
           }
         ],
-        "output_level": "{{PAGENAME}}"
+        "output_level": "Jupiter"
       },
       {
         "name": "Jupiter",
@@ -11796,10 +11796,10 @@
           },
           {
             "type": "repair_level",
-            "name": "{{PAGENAME}}"
+            "name": "Equalizer"
           }
         ],
-        "output_level": "{{PAGENAME}}"
+        "output_level": "Equalizer"
       },
       {
         "name": "Equalizer",
@@ -36618,10 +36618,10 @@
           },
           {
             "type": "repair_level",
-            "name": "{{PAGENAME}}"
+            "name": "Jupiter"
           }
         ],
-        "input_level": "{{PAGENAME}}"
+        "input_level": "Jupiter"
       },
       {
         "name": "Complex Gun Parts",
@@ -36635,10 +36635,10 @@
           },
           {
             "type": "repair_level",
-            "name": "{{PAGENAME}}"
+            "name": "Jupiter"
           }
         ],
-        "input_level": "{{PAGENAME}}"
+        "input_level": "Jupiter"
       },
       {
         "name": "Magnetic Accelerator",
@@ -37218,10 +37218,10 @@
           },
           {
             "type": "repair_level",
-            "name": "{{PAGENAME}}"
+            "name": "Equalizer"
           }
         ],
-        "input_level": "{{PAGENAME}}"
+        "input_level": "Equalizer"
       },
       {
         "name": "Complex Gun Parts",
@@ -37235,10 +37235,10 @@
           },
           {
             "type": "repair_level",
-            "name": "{{PAGENAME}}"
+            "name": "Equalizer"
           }
         ],
-        "input_level": "{{PAGENAME}}"
+        "input_level": "Equalizer"
       },
       {
         "name": "Magnetic Accelerator",
