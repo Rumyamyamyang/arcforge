@@ -321,19 +321,21 @@ export default function Home() {
       {/* Mobile Sidebar Toggle Button */}
       <button
         onClick={() => setIsSidebarOpen(true)}
-        className="lg:hidden fixed bottom-6 left-6 z-30 w-14 h-14 flex items-center justify-center bg-purple-500/90 backdrop-blur-sm rounded-full shadow-xl hover:bg-purple-600/90 transition-colors border-2 border-purple-400/50"
+        className="lg:hidden fixed bottom-6 left-6 z-30 w-14 h-14 flex items-center justify-center bg-gradient-to-br from-purple-500/30 to-pink-500/20 backdrop-blur-xl rounded-full shadow-2xl hover:from-purple-500/40 hover:to-pink-500/30 transition-all duration-300 border border-white/20 hover:border-white/30 hover:shadow-purple-500/50 hover:scale-105"
         aria-label="Open filters"
       >
-        <FontAwesomeIcon icon={faBars} className="text-white text-xl" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-full pointer-events-none"></div>
+        <FontAwesomeIcon icon={faBars} className="text-white text-xl relative z-10 drop-shadow-lg" />
       </button>
 
       {/* Settings Button */}
       <button
         onClick={() => setIsSettingsOpen(true)}
-        className="fixed bottom-6 left-24 lg:bottom-8 lg:right-8 lg:left-auto z-30 w-14 h-14 flex items-center justify-center bg-blue-500/90 backdrop-blur-sm rounded-full shadow-xl hover:bg-blue-600/90 transition-colors border-2 border-blue-400/50"
+        className="fixed bottom-6 left-24 lg:bottom-8 lg:right-8 lg:left-auto z-30 w-14 h-14 flex items-center justify-center bg-gradient-to-br from-blue-500/30 to-purple-500/20 backdrop-blur-xl rounded-full shadow-2xl hover:from-blue-500/40 hover:to-purple-500/30 transition-all duration-300 border border-white/20 hover:border-white/30 hover:shadow-blue-500/50 hover:scale-105"
         aria-label="Open settings"
       >
-        <FontAwesomeIcon icon={faCog} className="text-white text-xl" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-full pointer-events-none"></div>
+        <FontAwesomeIcon icon={faCog} className="text-white text-xl relative z-10 drop-shadow-lg" />
       </button>
 
       {/* Main Content Area */}
@@ -348,7 +350,7 @@ export default function Home() {
 
         {/* Left Sidebar - Search, Filters and Sort */}
         <aside className={`
-          w-80 bg-black/30 backdrop-blur-xl border-r border-purple-500/30 overflow-y-auto shadow-2xl z-30
+          w-80 bg-black/30 backdrop-blur-xl border-r border-purple-500/30 overflow-y-auto shadow-2xl z-50 lg:z-10
           fixed lg:relative inset-y-0 left-0 transition-transform duration-300 ease-in-out
           lg:translate-x-0
           ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
