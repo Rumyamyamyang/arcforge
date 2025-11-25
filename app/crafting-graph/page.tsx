@@ -550,8 +550,8 @@ function CraftingTreeContent() {
     return (
       <div className="min-h-screen bg-[#07020b] text-gray-100 flex flex-col">
         <header className="bg-[#07020b] border-b border-purple-500/20 sticky top-0 z-40">
-          <div className="flex items-center justify-between pr-8">
-            <a href="/" className="flex-shrink-0 h-24 flex items-center cursor-pointer">
+          <div className="flex items-center justify-between px-2 sm:px-4 md:pr-8">
+            <a href="/" className="flex-shrink-0 h-16 sm:h-20 md:h-24 flex items-center cursor-pointer">
               <Image
                 src="/logo.webp"
                 alt="ARC Forge"
@@ -562,27 +562,29 @@ function CraftingTreeContent() {
                 priority
               />
             </a>
-            <nav className="flex gap-2 items-center">
+            <nav className="flex gap-1 sm:gap-2 items-center">
               <a
                 href="/"
-                className="px-6 py-3 bg-black/20 border border-purple-500/20 rounded-lg text-gray-400 font-medium hover:bg-purple-500/10 hover:text-gray-300 transition-all"
+                className="px-2 py-2 sm:px-4 sm:py-2.5 md:px-6 md:py-3 bg-black/20 border border-purple-500/20 rounded-lg text-gray-400 text-xs sm:text-sm md:text-base font-medium hover:bg-purple-500/10 hover:text-gray-300 transition-all whitespace-nowrap"
               >
-                Item Database
+                <span className="hidden sm:inline">Item Database</span>
+                <span className="sm:hidden">Items</span>
               </a>
               <a
                 href="/crafting-graph?item=Power%20Rod"
-                className="px-6 py-3 bg-purple-500/20 border border-purple-500/50 rounded-lg text-purple-300 font-medium hover:bg-purple-500/30 transition-all"
+                className="px-2 py-2 sm:px-4 sm:py-2.5 md:px-6 md:py-3 bg-purple-500/20 border border-purple-500/50 rounded-lg text-purple-300 text-xs sm:text-sm md:text-base font-medium hover:bg-purple-500/30 transition-all whitespace-nowrap"
               >
-                Crafting Graph
+                <span className="hidden sm:inline">Crafting Graph</span>
+                <span className="sm:hidden">Graph</span>
               </a>
               <a
                 href="https://github.com/wangyz1999/arcforge"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 flex items-center justify-center bg-black/20 border border-purple-500/20 rounded-lg text-gray-400 hover:bg-purple-500/10 hover:text-gray-300 transition-all"
+                className="w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 flex-shrink-0 flex items-center justify-center bg-black/20 border border-purple-500/20 rounded-lg text-gray-400 hover:bg-purple-500/10 hover:text-gray-300 transition-all"
                 aria-label="View on GitHub"
               >
-                <FontAwesomeIcon icon={faGithub} className="text-xl" />
+                <FontAwesomeIcon icon={faGithub} className="text-lg sm:text-xl" />
               </a>
             </nav>
           </div>
@@ -608,8 +610,8 @@ function CraftingTreeContent() {
     <div className="h-screen bg-[#07020b] text-gray-100 flex flex-col overflow-hidden">
       {/* Header */}
       <header className="bg-[#07020b] border-b border-purple-500/20 z-40 flex-shrink-0">
-        <div className="flex items-center justify-between pr-8">
-          <a href="/" className="flex-shrink-0 h-24 flex items-center cursor-pointer">
+        <div className="flex items-center justify-between px-2 sm:px-4 md:pr-8">
+          <a href="/" className="flex-shrink-0 h-16 sm:h-20 md:h-24 flex items-center cursor-pointer">
             <Image
               src="/logo.webp"
               alt="ARC Forge"
@@ -621,27 +623,29 @@ function CraftingTreeContent() {
             />
           </a>
           
-          <nav className="flex gap-2 items-center">
+          <nav className="flex gap-1 sm:gap-2 items-center">
             <a
               href="/"
-              className="px-6 py-3 bg-black/20 border border-purple-500/20 rounded-lg text-gray-400 font-medium hover:bg-purple-500/10 hover:text-gray-300 transition-all"
+              className="px-2 py-2 sm:px-4 sm:py-2.5 md:px-6 md:py-3 bg-black/20 border border-purple-500/20 rounded-lg text-gray-400 text-xs sm:text-sm md:text-base font-medium hover:bg-purple-500/10 hover:text-gray-300 transition-all whitespace-nowrap"
             >
-              Item Database
+              <span className="hidden sm:inline">Item Database</span>
+              <span className="sm:hidden">Items</span>
             </a>
             <a
               href="/crafting-graph?item=Power%20Rod"
-              className="px-6 py-3 bg-purple-500/20 border border-purple-500/50 rounded-lg text-purple-300 font-medium hover:bg-purple-500/30 transition-all"
+              className="px-2 py-2 sm:px-4 sm:py-2.5 md:px-6 md:py-3 bg-purple-500/20 border border-purple-500/50 rounded-lg text-purple-300 text-xs sm:text-sm md:text-base font-medium hover:bg-purple-500/30 transition-all whitespace-nowrap"
             >
-              Crafting Graph
+              <span className="hidden sm:inline">Crafting Graph</span>
+              <span className="sm:hidden">Graph</span>
             </a>
             <a
               href="https://github.com/wangyz1999/arcforge"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-12 h-12 flex items-center justify-center bg-black/20 border border-purple-500/20 rounded-lg text-gray-400 hover:bg-purple-500/10 hover:text-gray-300 transition-all"
+              className="w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 flex-shrink-0 flex items-center justify-center bg-black/20 border border-purple-500/20 rounded-lg text-gray-400 hover:bg-purple-500/10 hover:text-gray-300 transition-all"
               aria-label="View on GitHub"
             >
-              <FontAwesomeIcon icon={faGithub} className="text-xl" />
+              <FontAwesomeIcon icon={faGithub} className="text-lg sm:text-xl" />
             </a>
           </nav>
         </div>
