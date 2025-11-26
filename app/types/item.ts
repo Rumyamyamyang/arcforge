@@ -7,6 +7,7 @@ export interface Item {
     quote?: string;
     type?: string;
     special_types?: string[];
+    location?: string;
     weight?: number;
     sellprice?: number | number[];
     stacksize?: number;
