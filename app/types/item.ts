@@ -1,0 +1,24 @@
+export interface Item {
+  name: string;
+  wiki_url: string;
+  infobox: {
+    image: string;
+    rarity: string;
+    quote?: string;
+    type?: string;
+    special_types?: string[];
+    weight?: number;
+    sellprice?: number | number[];
+    stacksize?: number;
+    damage?: number;
+    [key: string]: any;
+  };
+  image_urls: {
+    thumb?: string;
+    original?: string;
+    file_page?: string;
+  };
+  sources?: string[];
+  [key: string]: any;
+}
+
