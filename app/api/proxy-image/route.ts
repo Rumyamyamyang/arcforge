@@ -1,5 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+// Configure edge runtime for better caching
+export const runtime = 'edge';
+
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
   const imageUrl = searchParams.get('url');
@@ -9,7 +12,12 @@ export async function GET(request: NextRequest) {
   }
 
   try {
-    const response = await fetch(imageUrl);
+    const response = await fetch(imageUrl, {
+      // Add cache control to the fetch request
+      headers: {
+        'User-Agent': 'ArcForge/1.0',
+      },
+    });
     
     if (!response.ok) {
       return new NextResponse('Failed to fetch image', { status: response.status });
@@ -21,7 +29,11 @@ export async function GET(request: NextRequest) {
     return new NextResponse(imageBuffer, {
       headers: {
         'Content-Type': contentType,
-        'Cache-Control': 'public, max-age=31536000, immutable',
+        // Aggressive caching - images are immutable
+        'Cache-Control': 'public, max-age=31536000, immutable, s-maxage=31536000, stale-while-revalidate=31536000',
+        // Add CDN cache tags for Vercel
+        'CDN-Cache-Control': 'max-age=31536000',
+        'Vercel-CDN-Cache-Control': 'max-age=31536000',
       },
     });
   } catch (error) {
@@ -29,6 +41,4 @@ export async function GET(request: NextRequest) {
     return new NextResponse('Error fetching image', { status: 500 });
   }
 }
-
-
 
