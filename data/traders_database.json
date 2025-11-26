@@ -49,7 +49,7 @@
         "is_limited": true
       },
       {
-        "name": "Heavy_Gun_Parts",
+        "name": "Heavy Gun Parts",
         "price": 15,
         "currency": "Assorted Seeds",
         "stock": "3/3",
@@ -350,21 +350,21 @@
         "is_limited": true
       },
       {
-        "name": "Extended Light Magazine I",
+        "name": "Extended Light Mag I",
         "price": 1920,
         "currency": "Coins",
         "stock": "5/5",
         "is_limited": true
       },
       {
-        "name": "Extended Medium Magazine I",
+        "name": "Extended Medium Mag I",
         "price": 1920,
         "currency": "Coins",
         "stock": "5/5",
         "is_limited": true
       },
       {
-        "name": "Extended Shotgun Magazine I",
+        "name": "Extended Shotgun Mag I",
         "price": 1920,
         "currency": "Coins",
         "stock": "5/5",

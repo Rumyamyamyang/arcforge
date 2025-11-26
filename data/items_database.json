@@ -7317,6 +7317,7 @@
       "weight": 3.0,
       "sellprice": 270,
       "stacksize": 1,
+      "rarity": "Common",
       "healing": null,
       "shield": null,
       "stamina": null,

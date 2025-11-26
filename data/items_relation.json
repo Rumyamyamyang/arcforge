@@ -9738,6 +9738,24 @@
         "quantity": 1
       },
       {
+        "name": "Celeste",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 15,
+            "currency": "Assorted Seeds"
+          },
+          {
+            "type": "stock",
+            "value": "3/3",
+            "is_limited": true
+          }
+        ]
+      },
+      {
         "name": "Complex Gun Parts",
         "direction": "out",
         "relation": "craft_to",
@@ -21864,6 +21882,7 @@
       "weight": 3.0,
       "sellprice": 270,
       "stacksize": 1,
+      "rarity": "Common",
       "healing": null,
       "shield": null,
       "stamina": null,
@@ -44444,6 +44463,24 @@
           }
         ],
         "output_level": "1x Extended Light Mag I"
+      },
+      {
+        "name": "Tian Wen",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
@@ -44524,6 +44561,24 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 3
+      },
+      {
+        "name": "Tian Wen",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
@@ -44600,6 +44655,24 @@
         "direction": "out",
         "relation": "salvage_to",
         "quantity": 3
+      },
+      {
+        "name": "Tian Wen",
+        "direction": "in",
+        "relation": "sold_by",
+        "quantity": 1,
+        "dependency": [
+          {
+            "type": "price",
+            "amount": 1920,
+            "currency": "Coins"
+          },
+          {
+            "type": "stock",
+            "value": "5/5",
+            "is_limited": true
+          }
+        ]
       }
     ]
   },
@@ -47519,7 +47592,7 @@
         ]
       },
       {
-        "name": "Heavy_Gun_Parts",
+        "name": "Heavy Gun Parts",
         "direction": "out",
         "relation": "trader",
         "quantity": 1,
@@ -47874,30 +47947,6 @@
           {
             "type": "stock",
             "value": "10/10",
-            "is_limited": true
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Heavy_Gun_Parts",
-    "node_type": "item",
-    "edges": [
-      {
-        "name": "Celeste",
-        "direction": "in",
-        "relation": "sold_by",
-        "quantity": 1,
-        "dependency": [
-          {
-            "type": "price",
-            "amount": 15,
-            "currency": "Assorted Seeds"
-          },
-          {
-            "type": "stock",
-            "value": "3/3",
             "is_limited": true
           }
         ]
@@ -48288,7 +48337,7 @@
         ]
       },
       {
-        "name": "Extended Light Magazine I",
+        "name": "Extended Light Mag I",
         "direction": "out",
         "relation": "trader",
         "quantity": 1,
@@ -48306,7 +48355,7 @@
         ]
       },
       {
-        "name": "Extended Medium Magazine I",
+        "name": "Extended Medium Mag I",
         "direction": "out",
         "relation": "trader",
         "quantity": 1,
@@ -48324,7 +48373,7 @@
         ]
       },
       {
-        "name": "Extended Shotgun Magazine I",
+        "name": "Extended Shotgun Mag I",
         "direction": "out",
         "relation": "trader",
         "quantity": 1,
@@ -48399,78 +48448,6 @@
         "name": "Vertical Grip I",
         "direction": "out",
         "relation": "trader",
-        "quantity": 1,
-        "dependency": [
-          {
-            "type": "price",
-            "amount": 1920,
-            "currency": "Coins"
-          },
-          {
-            "type": "stock",
-            "value": "5/5",
-            "is_limited": true
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Extended Light Magazine I",
-    "node_type": "item",
-    "edges": [
-      {
-        "name": "Tian Wen",
-        "direction": "in",
-        "relation": "sold_by",
-        "quantity": 1,
-        "dependency": [
-          {
-            "type": "price",
-            "amount": 1920,
-            "currency": "Coins"
-          },
-          {
-            "type": "stock",
-            "value": "5/5",
-            "is_limited": true
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Extended Medium Magazine I",
-    "node_type": "item",
-    "edges": [
-      {
-        "name": "Tian Wen",
-        "direction": "in",
-        "relation": "sold_by",
-        "quantity": 1,
-        "dependency": [
-          {
-            "type": "price",
-            "amount": 1920,
-            "currency": "Coins"
-          },
-          {
-            "type": "stock",
-            "value": "5/5",
-            "is_limited": true
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Extended Shotgun Magazine I",
-    "node_type": "item",
-    "edges": [
-      {
-        "name": "Tian Wen",
-        "direction": "in",
-        "relation": "sold_by",
         "quantity": 1,
         "dependency": [
           {
