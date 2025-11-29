@@ -32,10 +32,13 @@ export default function Home() {
   const [displayPrice, setDisplayPrice] = useState(false);
   const [displayWeight, setDisplayWeight] = useState(false);
 
+  // get trackedItems from localStorage on init render - prevents error for some reason, idk honestly google told me to do this
   const [trackedItems, setTrackedItems] = useState<Set<string>>(() => {
+    if (typeof window === "undefined") return new Set();
     try {
       const raw = localStorage.getItem("tracked_items");
-      return raw ? new Set<string>(JSON.parse(raw)) : new Set();
+      const arr = raw ? JSON.parse(raw) : [];
+      return new Set(Array.isArray(arr) ? arr : []);
     } catch {
       return new Set();
     }

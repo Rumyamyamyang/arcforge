@@ -42,7 +42,7 @@ export default function ItemsGrid({
               displayWeight={displayWeight}
               onClick={() => onItemClick(item)}
               onTracked={ () => onItemTracked(item.name)}
-              isTrackedFunc={ () => isTrackedFunc(item.name)}
+              isTrackedFunc={ isTrackedFunc }
             />
           ))}
         </div>

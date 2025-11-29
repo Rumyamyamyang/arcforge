@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Item } from "../../types/item";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 interface TrackedItemsPanelProps {
   items: Item[];
@@ -68,16 +69,12 @@ export default function TrackedItemsPanel({
             <div className="flex">
               <button
                 onClick={() => {
-                  for (const item of items) {
-                    if (isTrackedFunc(item.name)) {
-                      onItemTracked(item.name);
-                    }
-                  }
+                  // snapshot tracked names then toggle each off
+                  const toClear = Array.from(trackedItems);
+                  toClear.forEach((name) => onItemTracked(name));
+                  // remove storage key (safer than serializing a Set)
                   try {
-                    localStorage.setItem(
-                      "tracked_items",
-                      JSON.stringify(trackedItems)
-                    );
+                    localStorage.removeItem("tracked_items");
                   } catch {}
                 }}
                 className="flex items-center justify-center px-4 py-2 rounded-lg bg-red-500/30 text-red-200 font-semibold hover:bg-red-500/50 hover:text-white transition-all mr-4"
@@ -157,15 +154,19 @@ export default function TrackedItemsPanel({
                     <div
                       className="aspect-square flex items-center justify-center p-4 relative overflow-hidden"
                       style={{ background: gradient }}>
-                      <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                       {item.image_urls?.thumb ? (
-                        <img
+                        <Image
                           src={item.image_urls.thumb}
                           alt={item.name}
+                          fill
+                          sizes="(max-width: 768px) 100vw, 33vw"
                           className="w-full h-full object-contain relative z-10 group-hover:scale-110 group-hover:rotate-2 transition-all duration-300 drop-shadow-2xl"
                           onError={(e) => {
-                            e.currentTarget.style.display = "none";
+                            if (e && e.currentTarget) {
+                              e.currentTarget.style.display = "none";
+                            }
                           }}
+                          style={{ objectFit: "contain" }}
                         />
                       ) : (
                         <div className="text-2xl text-gray-700/50">?</div>
