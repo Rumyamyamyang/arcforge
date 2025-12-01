@@ -14,8 +14,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
+  metadataBase: new URL(baseUrl),
   title: {
     default: "ARC Forge - ARC Raiders Item Database & Crafting Guide",
     template: "%s | ARC Forge",
@@ -27,6 +29,7 @@ export const metadata: Metadata = {
     "item database",
     "crafting guide",
     "game items",
+    "opensource project",
     "weapons",
     "materials",
     "crafting tree",
@@ -35,8 +38,14 @@ export const metadata: Metadata = {
   authors: [{ name: "ARC Forge" }],
   creator: "ARC Forge",
   publisher: "ARC Forge",
+  applicationName: "ARC Forge",
   formatDetection: {
     telephone: false,
+    email: false,
+    address: false,
+  },
+  alternates: {
+    canonical: "/",
   },
   openGraph: {
     type: "website",
@@ -48,10 +57,11 @@ export const metadata: Metadata = {
       "Complete ARC Raiders item database with crafting trees, recipes, and item information. Browse weapons, modifications, materials, and more.",
     images: [
       {
-        url: "/logo.webp",
+        url: `${baseUrl}/logo.webp`,
         width: 320,
         height: 96,
         alt: "ARC Forge Logo",
+        type: "image/webp",
       },
     ],
   },
@@ -60,8 +70,9 @@ export const metadata: Metadata = {
     title: "ARC Forge - ARC Raiders Item Database",
     description:
       "Complete ARC Raiders item database with crafting trees, recipes, and item information.",
-    images: ["/logo.webp"],
+    images: [`${baseUrl}/logo.webp`],
     creator: "@arcforge",
+    site: "@arcforge",
   },
   robots: {
     index: true,
@@ -93,7 +104,8 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#8b5cf6" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-        <link rel="canonical" href={process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"} />
+        <link rel="canonical" href={baseUrl} />
+        <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
         {/* Favicon links for Google Search and browsers */}
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
