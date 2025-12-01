@@ -47,7 +47,15 @@ export default function TranslationWarningToast() {
           {/* Message */}
           <div className="flex-1 min-w-0">
             <p className="text-amber-200 text-sm leading-relaxed">
-              {t('toast.translationWarning')}
+              {t('toast.translationWarning')}{' '}
+              <a
+                href="https://github.com/wangyz1999/arcforge/tree/main/app/i18n/translations"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline text-amber-100 hover:text-amber-50"
+              >
+                GitHub translations folder
+              </a>
             </p>
           </div>
           

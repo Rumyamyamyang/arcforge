@@ -140,7 +140,7 @@
 
   "language.select": "Seleziona lingua",
 
-  "toast.translationWarning": "⚠️ Attenzione: le traduzioni sono state generate automaticamente. Alcuni nomi degli oggetti potrebbero non corrispondere al 100% ai nomi visualizzati nel gioco.",
+  "toast.translationWarning": "⚠️ Attenzione: le traduzioni sono state generate automaticamente. Alcuni nomi degli oggetti potrebbero non corrispondere al 100% ai nomi visualizzati nel gioco. Per contribuire, modifica le traduzioni su GitHub.",
 
   "track.track": "Traccia",
   "track.untrack": "Smetti di tracciare",

@@ -140,7 +140,7 @@
 
   "language.select": "Sprache wählen",
 
-  "toast.translationWarning": "⚠️ Hinweis: Die Übersetzungen wurden automatisiert erstellt. Einige Item-Namen stimmen eventuell nicht 100 % mit den Namen im Spiel überein.",
+  "toast.translationWarning": "⚠️ Hinweis: Die Übersetzungen wurden automatisiert erstellt. Einige Item-Namen stimmen eventuell nicht 100 % mit den Namen im Spiel überein. Um beizutragen, bearbeite bitte die Übersetzungen auf GitHub.",
 
   "track.track": "Verfolgen",
   "track.untrack": "Nicht mehr verfolgen",
