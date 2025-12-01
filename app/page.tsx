@@ -41,15 +41,68 @@ export default function Home() {
   // Load tracked items from localStorage after component mounts (client-side only)
   useEffect(() => {
     try {
-      const raw = localStorage.getItem("tracked_items");
+      const raw = localStorage.getItem('tracked_items');
       if (raw) {
         const arr = JSON.parse(raw);
         setTrackedItems(new Set(Array.isArray(arr) ? arr : []));
       }
     } catch (error) {
-      console.error("Failed to load tracked items from localStorage:", error);
+      console.error('Failed to load tracked items from localStorage:', error);
     }
   }, []);
+
+  // Load item view settings (size, price/weight visibility, track icons) from localStorage
+  useEffect(() => {
+    try {
+      const raw = localStorage.getItem('item_view_settings');
+      if (!raw) return;
+
+      const parsed = JSON.parse(raw) as {
+        itemSize?: string;
+        displayPrice?: unknown;
+        displayWeight?: unknown;
+        showTrackIcons?: unknown;
+      };
+
+      if (
+        parsed.itemSize === 'tiny' ||
+        parsed.itemSize === 'small' ||
+        parsed.itemSize === 'medium' ||
+        parsed.itemSize === 'large'
+      ) {
+        setItemSize(parsed.itemSize);
+      }
+
+      if (typeof parsed.displayPrice === 'boolean') {
+        setDisplayPrice(parsed.displayPrice);
+      }
+
+      if (typeof parsed.displayWeight === 'boolean') {
+        setDisplayWeight(parsed.displayWeight);
+      }
+
+      if (typeof parsed.showTrackIcons === 'boolean') {
+        setShowTrackIcons(parsed.showTrackIcons);
+      }
+    } catch (error) {
+      console.error('Failed to load item view settings from localStorage:', error);
+    }
+  }, []);
+
+  // Persist item view settings whenever they change (client-side only)
+  useEffect(() => {
+    try {
+      const settings = {
+        itemSize,
+        displayPrice,
+        displayWeight,
+        showTrackIcons,
+      };
+      localStorage.setItem('item_view_settings', JSON.stringify(settings));
+    } catch {
+      // Ignore write errors (e.g., private mode / quota exceeded)
+    }
+  }, [itemSize, displayPrice, displayWeight, showTrackIcons]);
 
   const toggleItemTracked = (name: string) => {
     setTrackedItems((prev) => {
