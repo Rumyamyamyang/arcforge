@@ -33,19 +33,19 @@ export const LANGUAGE_LABELS: Record<Language, string> = {
   ar: 'العربية',
 };
 
-// Language flags/emojis for visual representation
-export const LANGUAGE_FLAGS: Record<Language, string> = {
-  en: '🇺🇸',
-  fr: '🇫🇷',
-  ja: '🇯🇵',
-  de: '🇩🇪',
-  pt: '🇵🇹',
-  es: '🇪🇸',
-  it: '🇮🇹',
-  ko: '🇰🇷',
-  zh: '🇨🇳',
-  zht: '🇭🇰',
-  ar: '🇸🇦',
+// Short language codes for consistent baseline alignment across platforms
+export const LANGUAGE_CODES: Record<Language, string> = {
+  en: 'EN',
+  fr: 'FR',
+  ja: 'JA',
+  de: 'DE',
+  pt: 'PT',
+  es: 'ES',
+  it: 'IT',
+  ko: 'KO',
+  zh: 'ZH',
+  zht: 'HK',
+  ar: 'AR',
 };
 
 interface LanguageContextType {

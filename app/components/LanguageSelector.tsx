@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe, faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import { useLanguage, SUPPORTED_LANGUAGES, LANGUAGE_LABELS, LANGUAGE_FLAGS, Language } from '../i18n';
+import { useLanguage, SUPPORTED_LANGUAGES, LANGUAGE_LABELS, LANGUAGE_CODES, Language } from '../i18n';
 
 export default function LanguageSelector() {
   const { language, setLanguage, t } = useLanguage();
@@ -44,13 +44,17 @@ export default function LanguageSelector() {
       {/* Trigger Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-10 h-10 sm:w-11 sm:h-11 md:w-auto md:h-12 md:px-3 flex-shrink-0 flex items-center justify-center gap-2 bg-black/40 backdrop-blur-sm border border-purple-500/30 rounded-lg md:rounded-xl text-gray-300 hover:bg-purple-500/20 hover:text-purple-200 hover:border-purple-400/50 transition-all duration-300 hover:scale-105"
+        className="h-10 sm:h-11 md:h-12 px-2 sm:px-2.5 md:px-3 flex-shrink-0 flex items-center justify-center gap-2 bg-black/40 backdrop-blur-sm border border-purple-500/30 rounded-lg md:rounded-xl text-gray-300 hover:bg-purple-500/20 hover:text-purple-200 hover:border-purple-400/50 transition-all duration-300 hover:scale-105"
         aria-label={t('language.select')}
         aria-expanded={isOpen}
         aria-haspopup="listbox"
       >
-        <span className="text-base md:text-lg">{LANGUAGE_FLAGS[language]}</span>
-        <span className="hidden md:inline text-sm font-medium">{LANGUAGE_LABELS[language]}</span>
+        <span className="flex items-center justify-center text-xs md:text-sm font-semibold leading-none tracking-wide">
+          {LANGUAGE_CODES[language]}
+        </span>
+        <span className="hidden md:inline text-sm font-medium leading-none">
+          {LANGUAGE_LABELS[language]}
+        </span>
         <FontAwesomeIcon 
           icon={faChevronDown} 
           className={`hidden md:inline text-xs transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} 
@@ -76,8 +80,12 @@ export default function LanguageSelector() {
               role="option"
               aria-selected={language === lang}
             >
-              <span className="text-lg">{LANGUAGE_FLAGS[lang]}</span>
-              <span className="font-medium text-sm">{LANGUAGE_LABELS[lang]}</span>
+              <span className="flex items-center justify-center text-xs font-semibold leading-none tracking-wide">
+                {LANGUAGE_CODES[lang]}
+              </span>
+              <span className="font-medium text-sm leading-none">
+                {LANGUAGE_LABELS[lang]}
+              </span>
               {language === lang && (
                 <span className="ml-auto text-purple-400 text-xs">✓</span>
               )}
