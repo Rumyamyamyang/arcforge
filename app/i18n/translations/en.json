@@ -48,6 +48,12 @@
   "settings.displayWeight": "Display Weight",
   "settings.lightweightMode": "Lightweight Mode",
   "settings.openCraftingGraphOnClick": "Open graph on click",
+  "settings.itemSizeHelp": "Controls how large each item card appears in the grid.",
+  "settings.displayPriceHelp": "Shows the sell price on each item card when available.",
+  "settings.displayWeightHelp": "Shows the item weight on each item card when available.",
+  "settings.showTrackIconsHelp": "Shows small track/untrack icons on item cards for quick tracking.",
+  "settings.openCraftingGraphOnClickHelp": "Clicking an item card will jump directly to its crafting graph.",
+  "settings.lightweightModeHelp": "Disables some visual effects to improve performance on slower devices.",
 
   "item.location": "Location",
   "item.weight": "Weight",

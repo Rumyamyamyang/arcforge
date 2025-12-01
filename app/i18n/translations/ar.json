@@ -87,6 +87,12 @@
   "settings.displayWeight": "إظهار الوزن",
   "settings.lightweightMode": "وضع خفيف",
   "settings.openCraftingGraphOnClick": "فتح المخطط عند النقر",
+  "settings.itemSizeHelp": "تتحكم في حجم بطاقة كل عنصر داخل الشبكة.",
+  "settings.displayPriceHelp": "تُظهر سعر البيع على بطاقة العنصر عند توفره.",
+  "settings.displayWeightHelp": "تُظهر وزن العنصر على البطاقة عند توفره.",
+  "settings.showTrackIconsHelp": "تُظهر أيقونات صغيرة للتتبع/إلغاء التتبع مباشرة على بطاقات العناصر.",
+  "settings.openCraftingGraphOnClickHelp": "النقر على بطاقة عنصر سيفتح مخطط التصنيع الخاص به مباشرة.",
+  "settings.lightweightModeHelp": "تُعطّل بعض التأثيرات البصرية لتحسين الأداء على الأجهزة الأبطأ.",
 
   "item.location": "الموقع",
   "item.weight": "الوزن",
@@ -154,5 +160,3 @@
   "track.noItemsYet": "لا توجد عناصر متتبعة بعد.",
   "track.openTrackedItems": "فتح العناصر المتتبعة"
 }
-
-

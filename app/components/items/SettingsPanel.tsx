@@ -1,15 +1,15 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCog, faEye, faDiagramProject } from '@fortawesome/free-solid-svg-icons';
-import { useTranslation } from '../../i18n';
+import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCog, faEye, faDiagramProject } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "../../i18n";
 
 interface SettingsPanelProps {
   isOpen: boolean;
   onClose: () => void;
-  itemSize: 'tiny' | 'small' | 'medium' | 'large';
-  setItemSize: (size: 'tiny' | 'small' | 'medium' | 'large') => void;
+  itemSize: "tiny" | "small" | "medium" | "large";
+  setItemSize: (size: "tiny" | "small" | "medium" | "large") => void;
   displayPrice: boolean;
   setDisplayPrice: (value: boolean) => void;
   displayWeight: boolean;
@@ -21,6 +21,15 @@ interface SettingsPanelProps {
   lightweightMode: boolean;
   setLightweightMode: (value: boolean) => void;
 }
+
+const TooltipLabel = ({ title, children }: { title: string; children: React.ReactNode }) => (
+  <div className="relative group block w-full">
+    {children}
+    <div className="pointer-events-none absolute left-0 mt-2 w-64 rounded-xl border border-blue-500/40 bg-black/95 px-3 py-2 text-xs text-blue-100 opacity-0 backdrop-blur-md transition-all duration-200 group-hover:opacity-100 group-hover:translate-y-0 -translate-y-1 z-50">
+      {title}
+    </div>
+  </div>
+);
 
 export default function SettingsPanel({
   isOpen,
@@ -45,27 +54,24 @@ export default function SettingsPanel({
   return (
     <>
       {/* Backdrop */}
-      <div
-        className="fixed inset-0 bg-black/70 z-40 backdrop-blur-md"
-        onClick={onClose}
-      />
-      
+      <div className="fixed inset-0 bg-black/70 z-40 backdrop-blur-md" onClick={onClose} />
+
       {/* Settings Panel */}
       <div className="fixed bottom-0 left-0 w-full md:w-[400px] md:bottom-8 md:right-8 md:left-auto bg-gradient-to-br from-black/95 via-blue-950/30 to-black/95 backdrop-blur-2xl border border-blue-500/40 z-50 rounded-t-3xl md:rounded-2xl shadow-2xl animate-slide-up">
         {/* Decorative gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-transparent to-purple-500/5 pointer-events-none rounded-t-3xl md:rounded-2xl" />
-        
+
         <div className="relative z-10 p-6">
           {/* Header */}
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-300 flex items-center gap-3">
               <FontAwesomeIcon icon={faCog} className="text-blue-400" />
-              {t('settings.title')}
+              {t("settings.title")}
             </h2>
             <button
               onClick={onClose}
               className="w-10 h-10 flex items-center justify-center bg-black/60 hover:bg-red-500/30 backdrop-blur-sm rounded-xl transition-all duration-300 text-gray-400 hover:text-red-300 border border-blue-500/20 hover:border-red-500/50"
-              aria-label={t('buttons.close')}
+              aria-label={t("buttons.close")}
             >
               <span className="text-lg">✕</span>
             </button>
@@ -75,49 +81,51 @@ export default function SettingsPanel({
           <div className="space-y-6">
             {/* Item Size */}
             <div>
-              <label className="text-sm font-bold text-blue-300 mb-3 block uppercase tracking-wider">
-                {t('settings.itemSize')}
-              </label>
+              <TooltipLabel title={t("settings.itemSizeHelp")}>
+                <label className="text-sm font-bold text-blue-300 mb-3 block uppercase tracking-wider cursor-help">
+                  {t("settings.itemSize")}
+                </label>
+              </TooltipLabel>
               <div className="flex gap-2">
                 <button
-                  onClick={() => setItemSize('tiny')}
+                  onClick={() => setItemSize("tiny")}
                   className={`flex-1 px-3 py-2 rounded-lg text-sm font-semibold transition-all border-2 ${
-                    itemSize === 'tiny'
-                      ? 'bg-blue-500/40 text-blue-100 border-blue-400/60 shadow-lg shadow-blue-500/30'
-                      : 'bg-black/40 text-gray-400 border-blue-500/20 hover:bg-blue-500/20 hover:text-blue-300'
+                    itemSize === "tiny"
+                      ? "bg-blue-500/40 text-blue-100 border-blue-400/60 shadow-lg shadow-blue-500/30"
+                      : "bg-black/40 text-gray-400 border-blue-500/20 hover:bg-blue-500/20 hover:text-blue-300"
                   }`}
                 >
-                  {t('settings.tiny')}
+                  {t("settings.tiny")}
                 </button>
                 <button
-                  onClick={() => setItemSize('small')}
+                  onClick={() => setItemSize("small")}
                   className={`flex-1 px-3 py-2 rounded-lg text-sm font-semibold transition-all border-2 ${
-                    itemSize === 'small'
-                      ? 'bg-blue-500/40 text-blue-100 border-blue-400/60 shadow-lg shadow-blue-500/30'
-                      : 'bg-black/40 text-gray-400 border-blue-500/20 hover:bg-blue-500/20 hover:text-blue-300'
+                    itemSize === "small"
+                      ? "bg-blue-500/40 text-blue-100 border-blue-400/60 shadow-lg shadow-blue-500/30"
+                      : "bg-black/40 text-gray-400 border-blue-500/20 hover:bg-blue-500/20 hover:text-blue-300"
                   }`}
                 >
-                  {t('settings.small')}
+                  {t("settings.small")}
                 </button>
                 <button
-                  onClick={() => setItemSize('medium')}
+                  onClick={() => setItemSize("medium")}
                   className={`flex-1 px-3 py-2 rounded-lg text-sm font-semibold transition-all border-2 ${
-                    itemSize === 'medium'
-                      ? 'bg-blue-500/40 text-blue-100 border-blue-400/60 shadow-lg shadow-blue-500/30'
-                      : 'bg-black/40 text-gray-400 border-blue-500/20 hover:bg-blue-500/20 hover:text-blue-300'
+                    itemSize === "medium"
+                      ? "bg-blue-500/40 text-blue-100 border-blue-400/60 shadow-lg shadow-blue-500/30"
+                      : "bg-black/40 text-gray-400 border-blue-500/20 hover:bg-blue-500/20 hover:text-blue-300"
                   }`}
                 >
-                  {t('settings.medium')}
+                  {t("settings.medium")}
                 </button>
                 <button
-                  onClick={() => setItemSize('large')}
+                  onClick={() => setItemSize("large")}
                   className={`flex-1 px-3 py-2 rounded-lg text-sm font-semibold transition-all border-2 ${
-                    itemSize === 'large'
-                      ? 'bg-blue-500/40 text-blue-100 border-blue-400/60 shadow-lg shadow-blue-500/30'
-                      : 'bg-black/40 text-gray-400 border-blue-500/20 hover:bg-blue-500/20 hover:text-blue-300'
+                    itemSize === "large"
+                      ? "bg-blue-500/40 text-blue-100 border-blue-400/60 shadow-lg shadow-blue-500/30"
+                      : "bg-black/40 text-gray-400 border-blue-500/20 hover:bg-blue-500/20 hover:text-blue-300"
                   }`}
                 >
-                  {t('settings.large')}
+                  {t("settings.large")}
                 </button>
               </div>
             </div>
@@ -127,146 +135,147 @@ export default function SettingsPanel({
 
             {/* Display Price */}
             <div>
-              <label className="flex items-center justify-between cursor-pointer group">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 flex items-center justify-center bg-black/60 rounded-lg border border-blue-500/30 group-hover:border-blue-400/50 transition-colors">
-                    <Image src="/coin.webp" alt="Coin" width={24} height={24} />
+              <TooltipLabel title={t("settings.displayPriceHelp")}>
+                <label className="flex items-center justify-between cursor-pointer group">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 flex items-center justify-center bg-black/60 rounded-lg border border-blue-500/30 group-hover:border-blue-400/50 transition-colors">
+                      <Image src="/coin.webp" alt="Coin" width={24} height={24} />
+                    </div>
+                    <span className="text-sm font-bold text-blue-300 uppercase tracking-wider">
+                      {t("settings.displayPrice")}
+                    </span>
                   </div>
-                  <span className="text-sm font-bold text-blue-300 uppercase tracking-wider">
-                    {t('settings.displayPrice')}
-                  </span>
-                </div>
-                <div
-                  className={`relative w-14 h-8 rounded-full transition-all duration-300 ${
-                    displayPrice ? 'bg-blue-500/60' : 'bg-black/60'
-                  } border ${
-                    displayPrice ? 'border-blue-400/60' : 'border-blue-500/20'
-                  }`}
-                  onClick={() => setDisplayPrice(!displayPrice)}
-                >
                   <div
-                    className={`absolute top-1 left-1 w-6 h-6 bg-white rounded-full transition-transform duration-300 shadow-lg ${
-                      displayPrice ? 'translate-x-6' : 'translate-x-0'
-                    }`}
-                  />
-                </div>
-              </label>
+                    className={`relative w-14 h-8 rounded-full transition-all duration-300 ${
+                      displayPrice ? "bg-blue-500/60" : "bg-black/60"
+                    } border ${displayPrice ? "border-blue-400/60" : "border-blue-500/20"}`}
+                    onClick={() => setDisplayPrice(!displayPrice)}
+                  >
+                    <div
+                      className={`absolute top-1 left-1 w-6 h-6 bg-white rounded-full transition-transform duration-300 shadow-lg ${
+                        displayPrice ? "translate-x-6" : "translate-x-0"
+                      }`}
+                    />
+                  </div>
+                </label>
+              </TooltipLabel>
             </div>
 
             {/* Display Weight */}
             <div>
-              <label className="flex items-center justify-between cursor-pointer group">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 flex items-center justify-center bg-black/60 rounded-lg border border-blue-500/30 group-hover:border-blue-400/50 transition-colors">
-                    <Image src="/weight.webp" alt="Weight" width={24} height={24} />
+              <TooltipLabel title={t("settings.displayWeightHelp")}>
+                <label className="flex items-center justify-between cursor-pointer group">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 flex items-center justify-center bg-black/60 rounded-lg border border-blue-500/30 group-hover:border-blue-400/50 transition-colors">
+                      <Image src="/weight.webp" alt="Weight" width={24} height={24} />
+                    </div>
+                    <span className="text-sm font-bold text-blue-300 uppercase tracking-wider">
+                      {t("settings.displayWeight")}
+                    </span>
                   </div>
-                  <span className="text-sm font-bold text-blue-300 uppercase tracking-wider">
-                    {t('settings.displayWeight')}
-                  </span>
-                </div>
-                <div
-                  className={`relative w-14 h-8 rounded-full transition-all duration-300 ${
-                    displayWeight ? 'bg-blue-500/60' : 'bg-black/60'
-                  } border ${
-                    displayWeight ? 'border-blue-400/60' : 'border-blue-500/20'
-                  }`}
-                  onClick={() => setDisplayWeight(!displayWeight)}
-                >
                   <div
-                    className={`absolute top-1 left-1 w-6 h-6 bg-white rounded-full transition-transform duration-300 shadow-lg ${
-                      displayWeight ? 'translate-x-6' : 'translate-x-0'
-                    }`}
-                  />
-                </div>
-              </label>
+                    className={`relative w-14 h-8 rounded-full transition-all duration-300 ${
+                      displayWeight ? "bg-blue-500/60" : "bg-black/60"
+                    } border ${displayWeight ? "border-blue-400/60" : "border-blue-500/20"}`}
+                    onClick={() => setDisplayWeight(!displayWeight)}
+                  >
+                    <div
+                      className={`absolute top-1 left-1 w-6 h-6 bg-white rounded-full transition-transform duration-300 shadow-lg ${
+                        displayWeight ? "translate-x-6" : "translate-x-0"
+                      }`}
+                    />
+                  </div>
+                </label>
+              </TooltipLabel>
             </div>
 
             {/* Show Track Icons */}
             <div>
-              <label className="flex items-center justify-between cursor-pointer group">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 flex items-center justify-center bg-black/60 rounded-lg border border-blue-500/30 group-hover:border-blue-400/50 transition-colors">
-                    <FontAwesomeIcon icon={faEye} className="text-white text-lg" />
+              <TooltipLabel title={t("settings.showTrackIconsHelp")}>
+                <label className="flex items-center justify-between cursor-pointer group">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 flex items-center justify-center bg-black/60 rounded-lg border border-blue-500/30 group-hover:border-blue-400/50 transition-colors">
+                      <FontAwesomeIcon icon={faEye} className="text-white text-lg" />
+                    </div>
+                    <span className="text-sm font-bold text-blue-300 uppercase tracking-wider">
+                      {t("track.showTrackIcons")}
+                    </span>
                   </div>
-                  <span className="text-sm font-bold text-blue-300 uppercase tracking-wider">
-                    {t('track.showTrackIcons')}
-                  </span>
-                </div>
-                <div
-                  className={`relative w-14 h-8 rounded-full transition-all duration-300 ${
-                    showTrackIcons ? 'bg-blue-500/60' : 'bg-black/60'
-                  } border ${
-                    showTrackIcons ? 'border-blue-400/60' : 'border-blue-500/20'
-                  }`}
-                  onClick={() => setShowTrackIcons(!showTrackIcons)}
-                >
                   <div
-                    className={`absolute top-1 left-1 w-6 h-6 bg-white rounded-full transition-transform duration-300 shadow-lg ${
-                      showTrackIcons ? 'translate-x-6' : 'translate-x-0'
-                    }`}
-                  />
-                </div>
-              </label>
+                    className={`relative w-14 h-8 rounded-full transition-all duration-300 ${
+                      showTrackIcons ? "bg-blue-500/60" : "bg-black/60"
+                    } border ${showTrackIcons ? "border-blue-400/60" : "border-blue-500/20"}`}
+                    onClick={() => setShowTrackIcons(!showTrackIcons)}
+                  >
+                    <div
+                      className={`absolute top-1 left-1 w-6 h-6 bg-white rounded-full transition-transform duration-300 shadow-lg ${
+                        showTrackIcons ? "translate-x-6" : "translate-x-0"
+                      }`}
+                    />
+                  </div>
+                </label>
+              </TooltipLabel>
             </div>
 
             {/* Open crafting graph directly on item click */}
             <div>
-              <label className="flex items-center justify-between cursor-pointer group">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 flex items-center justify-center bg-black/60 rounded-lg border border-blue-500/30 group-hover:border-blue-400/50 transition-colors">
-                    <FontAwesomeIcon icon={faDiagramProject} className="text-white text-lg" />
-                  </div>
-                  <span className="text-sm font-bold text-blue-300 uppercase tracking-wider">
-                    {t('settings.openCraftingGraphOnClick')}
-                  </span>
-                </div>
-                <div
-                  className={`relative w-14 h-8 rounded-full transition-all duration-300 ${
-                    openCraftingGraphOnClick ? 'bg-blue-500/60' : 'bg-black/60'
-                  } border ${
-                    openCraftingGraphOnClick ? 'border-blue-400/60' : 'border-blue-500/20'
-                  }`}
-                  onClick={() => setOpenCraftingGraphOnClick(!openCraftingGraphOnClick)}
-                >
-                  <div
-                    className={`absolute top-1 left-1 w-6 h-6 bg-white rounded-full transition-transform duration-300 shadow-lg ${
-                      openCraftingGraphOnClick ? 'translate-x-6' : 'translate-x-0'
-                    }`}
-                  />
-                </div>
-              </label>
-            </div>
-            
-            {/* Lightweight Mode */}
-            <div>
-              <label className="flex items-center justify-between cursor-pointer group">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 flex items-center justify-center bg-black/60 rounded-lg border border-blue-500/30 group-hover:border-blue-400/50 transition-colors">
+              <TooltipLabel title={t("settings.openCraftingGraphOnClickHelp")}>
+                <label className="flex items-center justify-between cursor-pointer group">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 flex items-center justify-center bg-black/60 rounded-lg border border-blue-500/30 group-hover:border-blue-400/50 transition-colors">
+                      <FontAwesomeIcon icon={faDiagramProject} className="text-white text-lg" />
+                    </div>
                     <span className="text-sm font-bold text-blue-300 uppercase tracking-wider">
-                      ⚡
+                      {t("settings.openCraftingGraphOnClick")}
                     </span>
                   </div>
-                  <span className="text-sm font-bold text-blue-300 uppercase tracking-wider">
-                    {t('settings.lightweightMode')}
-                  </span>
-                </div>
-                <div
-                  className={`relative w-14 h-8 rounded-full transition-all duration-300 ${
-                    lightweightMode ? 'bg-blue-500/60' : 'bg-black/60'
-                  } border ${
-                    lightweightMode ? 'border-blue-400/60' : 'border-blue-500/20'
-                  }`}
-                  onClick={() => setLightweightMode(!lightweightMode)}
-                >
                   <div
-                    className={`absolute top-1 left-1 w-6 h-6 bg-white rounded-full transition-transform duration-300 shadow-lg ${
-                      lightweightMode ? 'translate-x-6' : 'translate-x-0'
+                    className={`relative w-14 h-8 rounded-full transition-all duration-300 ${
+                      openCraftingGraphOnClick ? "bg-blue-500/60" : "bg-black/60"
+                    } border ${
+                      openCraftingGraphOnClick ? "border-blue-400/60" : "border-blue-500/20"
                     }`}
-                  />
-                </div>
-              </label>
+                    onClick={() => setOpenCraftingGraphOnClick(!openCraftingGraphOnClick)}
+                  >
+                    <div
+                      className={`absolute top-1 left-1 w-6 h-6 bg-white rounded-full transition-transform duration-300 shadow-lg ${
+                        openCraftingGraphOnClick ? "translate-x-6" : "translate-x-0"
+                      }`}
+                    />
+                  </div>
+                </label>
+              </TooltipLabel>
             </div>
 
+            {/* Lightweight Mode */}
+            <div>
+              <TooltipLabel title={t("settings.lightweightModeHelp")}>
+                <label className="flex items-center justify-between cursor-pointer group">
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 flex items-center justify-center bg-black/60 rounded-lg border border-blue-500/30 group-hover:border-blue-400/50 transition-colors">
+                      <span className="text-sm font-bold text-blue-300 uppercase tracking-wider">
+                        ⚡
+                      </span>
+                    </div>
+                    <span className="text-sm font-bold text-blue-300 uppercase tracking-wider">
+                      {t("settings.lightweightMode")}
+                    </span>
+                  </div>
+                  <div
+                    className={`relative w-14 h-8 rounded-full transition-all duration-300 ${
+                      lightweightMode ? "bg-blue-500/60" : "bg-black/60"
+                    } border ${lightweightMode ? "border-blue-400/60" : "border-blue-500/20"}`}
+                    onClick={() => setLightweightMode(!lightweightMode)}
+                  >
+                    <div
+                      className={`absolute top-1 left-1 w-6 h-6 bg-white rounded-full transition-transform duration-300 shadow-lg ${
+                        lightweightMode ? "translate-x-6" : "translate-x-0"
+                      }`}
+                    />
+                  </div>
+                </label>
+              </TooltipLabel>
+            </div>
           </div>
         </div>
       </div>

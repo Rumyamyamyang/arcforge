@@ -87,6 +87,12 @@
   "settings.displayWeight": "重量を表示",
   "settings.lightweightMode": "軽量モード",
   "settings.openCraftingGraphOnClick": "クリックでグラフを開く",
+  "settings.itemSizeHelp": "グリッド内で表示されるアイテムカードの大きさを調整します。",
+  "settings.displayPriceHelp": "利用可能な場合、各アイテムカードに売却価格を表示します。",
+  "settings.displayWeightHelp": "利用可能な場合、各アイテムカードに重量を表示します。",
+  "settings.showTrackIconsHelp": "アイテムカード上に小さな追跡/追跡解除アイコンを表示して素早く操作できます。",
+  "settings.openCraftingGraphOnClickHelp": "アイテムカードをクリックすると、そのアイテムのクラフトグラフへ直接移動します。",
+  "settings.lightweightModeHelp": "一部のビジュアル効果を無効にして、低スペック環境でのパフォーマンスを改善します。",
 
   "item.location": "入手場所",
   "item.weight": "重量",
@@ -154,5 +160,3 @@
   "track.noItemsYet": "まだ追跡中のアイテムはありません。",
   "track.openTrackedItems": "追跡中のアイテムを開く"
 }
-
-

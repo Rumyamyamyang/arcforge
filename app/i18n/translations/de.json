@@ -85,8 +85,14 @@
   "settings.large": "Groß",
   "settings.displayPrice": "Preis anzeigen",
   "settings.displayWeight": "Gewicht anzeigen",
-   "settings.lightweightMode": "Leichtmodus",
+  "settings.lightweightMode": "Leichtmodus",
   "settings.openCraftingGraphOnClick": "Grafik beim Klick öffnen",
+  "settings.itemSizeHelp": "Steuert, wie groß jede Item-Karte im Raster angezeigt wird.",
+  "settings.displayPriceHelp": "Zeigt den Verkaufspreis auf jeder Item-Karte an, sofern verfügbar.",
+  "settings.displayWeightHelp": "Zeigt das Gewicht des Items auf jeder Karte an, sofern verfügbar.",
+  "settings.showTrackIconsHelp": "Zeigt kleine Verfolgen-/Nicht-mehr-verfolgen-Symbole direkt auf den Item-Karten.",
+  "settings.openCraftingGraphOnClickHelp": "Ein Klick auf eine Item-Karte öffnet direkt ihren Crafting-Grafen.",
+  "settings.lightweightModeHelp": "Deaktiviert einige visuelle Effekte, um die Performance auf langsameren Geräten zu verbessern.",
 
   "item.location": "Fundort",
   "item.weight": "Gewicht",
@@ -154,5 +160,3 @@
   "track.noItemsYet": "Noch keine Items werden verfolgt.",
   "track.openTrackedItems": "Verfolgte Items öffnen"
 }
-
-

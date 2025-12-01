@@ -87,6 +87,12 @@
   "settings.displayWeight": "顯示重量",
   "settings.lightweightMode": "輕量模式",
   "settings.openCraftingGraphOnClick": "點擊時開啟關係圖",
+  "settings.itemSizeHelp": "控制在網格中，每張物品卡片顯示的大小。",
+  "settings.displayPriceHelp": "在可用時，於每張物品卡片上顯示販售價格。",
+  "settings.displayWeightHelp": "在可用時，於每張物品卡片上顯示物品重量。",
+  "settings.showTrackIconsHelp": "在物品卡片上顯示用於快速追蹤／取消追蹤的小圖示。",
+  "settings.openCraftingGraphOnClickHelp": "點擊物品卡片時，會直接跳到該物品的製作關係圖。",
+  "settings.lightweightModeHelp": "關閉部分視覺效果，以提升在效能較低裝置上的流暢度。",
 
   "item.location": "位置",
   "item.weight": "重量",
@@ -154,5 +160,3 @@
   "track.noItemsYet": "目前尚未追蹤任何物品。",
   "track.openTrackedItems": "開啟已追蹤物品"
 }
-
-

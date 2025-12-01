@@ -87,6 +87,12 @@
   "settings.displayWeight": "Mostra peso",
   "settings.lightweightMode": "Modalità leggera",
   "settings.openCraftingGraphOnClick": "Apri il grafo al clic",
+  "settings.itemSizeHelp": "Controlla quanto grande appare ogni carta oggetto nella griglia.",
+  "settings.displayPriceHelp": "Mostra il prezzo di vendita su ogni carta oggetto quando disponibile.",
+  "settings.displayWeightHelp": "Mostra il peso dell’oggetto su ogni carta quando disponibile.",
+  "settings.showTrackIconsHelp": "Mostra piccole icone di traccia/smetti di tracciare direttamente sulle carte.",
+  "settings.openCraftingGraphOnClickHelp": "Facendo clic su una carta oggetto si apre direttamente il suo grafo di crafting.",
+  "settings.lightweightModeHelp": "Disattiva alcuni effetti visivi per migliorare le prestazioni sui dispositivi meno potenti.",
 
   "item.location": "Posizione",
   "item.weight": "Peso",
@@ -154,5 +160,3 @@
   "track.noItemsYet": "Nessun oggetto è ancora tracciato.",
   "track.openTrackedItems": "Apri oggetti tracciati"
 }
-
-

@@ -87,6 +87,12 @@
   "settings.displayWeight": "显示重量",
   "settings.lightweightMode": "轻量模式",
   "settings.openCraftingGraphOnClick": "点击时打开关系图",
+  "settings.itemSizeHelp": "控制网格中每个物品卡片显示的大小。",
+  "settings.displayPriceHelp": "在可用时，在每个物品卡片上显示出售价格。",
+  "settings.displayWeightHelp": "在可用时，在每个物品卡片上显示物品重量。",
+  "settings.showTrackIconsHelp": "在物品卡片上显示用于快速追踪/取消追踪的小图标。",
+  "settings.openCraftingGraphOnClickHelp": "点击物品卡片时，将直接跳转到该物品的制作关系图。",
+  "settings.lightweightModeHelp": "关闭部分视觉效果，以提升在性能较弱设备上的流畅度。",
 
   "item.location": "位置",
   "item.weight": "重量",
@@ -154,5 +160,3 @@
   "track.noItemsYet": "当前还没有被追踪的物品。",
   "track.openTrackedItems": "打开已追踪物品"
 }
-
-
