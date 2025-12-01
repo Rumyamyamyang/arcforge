@@ -1,6 +1,9 @@
+'use client';
+
 import Image from 'next/image';
 import { Item } from '../../types/item';
 import { rarityColors, rarityGradients } from '../../config/rarityConfig';
+import { useTranslation } from '../../i18n';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 
@@ -15,9 +18,13 @@ interface ItemCardProps {
 }
 
 export default function ItemCard({ item, displayPrice, displayWeight, showTrackIcon, onClick, onTracked, isTrackedFunc }: ItemCardProps) {
+  const { t, tItem } = useTranslation();
   const rarity = item.infobox?.rarity || 'Common';
   const borderColor = rarityColors[rarity] || '#717471';
   const gradient = rarityGradients[rarity] || rarityGradients.Common;
+
+  // Get translated item name
+  const translatedName = tItem(item.name);
 
   return (
     <div
@@ -38,7 +45,7 @@ export default function ItemCard({ item, displayPrice, displayWeight, showTrackI
             e.stopPropagation();
             onTracked();
           }}
-          title={isTrackedFunc(item.name) ? 'Untrack' : 'Track'}
+          title={isTrackedFunc(item.name) ? t('track.untrack') : t('track.track')}
           className={`absolute top-2 left-2 z-20 w-8 h-8 rounded-md flex items-center justify-center text-sm ${
             isTrackedFunc(item.name) ? 'bg-yellow-400 text-black' : 'bg-black/40 text-gray-300'
           }`}
@@ -89,7 +96,7 @@ export default function ItemCard({ item, displayPrice, displayWeight, showTrackI
         {item.image_urls?.thumb ? (
           <img
             src={item.image_urls.thumb}
-            alt={item.name}
+            alt={translatedName}
             className="w-full h-full object-contain relative z-10 group-hover:scale-110 group-hover:rotate-2 transition-all duration-300 drop-shadow-2xl"
             onError={(e) => {
               e.currentTarget.style.display = 'none';
@@ -109,7 +116,7 @@ export default function ItemCard({ item, displayPrice, displayWeight, showTrackI
             textShadow: `0 2px 8px ${borderColor}40`
           }}
         >
-          {item.name}
+          {translatedName}
         </h3>
       </div>
 
@@ -123,4 +130,3 @@ export default function ItemCard({ item, displayPrice, displayWeight, showTrackI
     </div>
   );
 }
-
