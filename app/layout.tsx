@@ -107,11 +107,9 @@ export default function RootLayout({
         <link rel="canonical" href={baseUrl} />
         <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
         {/* Favicon links for Google Search and browsers */}
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         {/* Preconnect to external resources for better performance */}
         <link rel="preconnect" href="https://arcraiders.wiki" />
