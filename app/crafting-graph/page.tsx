@@ -11,6 +11,7 @@ import LoadingState from "../components/graph/LoadingState";
 import ErrorState from "../components/graph/ErrorState";
 import GraphSettingsPanel from "../components/graph/GraphSettingsPanel";
 import HelpPanel from "../components/graph/HelpPanel";
+import QuickSearchBar from "../components/graph/QuickSearchBar";
 import { ItemData } from "../types/graph";
 import { cytoscapeStyles } from "../config/cytoscapeStyles";
 import { buildGraphElements, buildLayoutPositions } from "../utils/graphHelpers";
@@ -249,6 +250,9 @@ function CraftingTreeContent() {
 
       {/* Graph Canvas */}
       <div className="flex-1 relative bg-[#07020b] overflow-hidden">
+        {/* Quick Search Bar */}
+        <QuickSearchBar selectedEdgeTypes={selectedEdgeTypes} />
+
         <div
           ref={containerRef}
           className="w-full h-full"
