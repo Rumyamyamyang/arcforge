@@ -11,6 +11,7 @@
 
   "search.title": "Поиск",
   "search.placeholder": "Искать предметы...",
+  "search.placeholderShort": "Поиск...",
 
   "sort.title": "Сортировать по",
   "sort.name": "Названию",

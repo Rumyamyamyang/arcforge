@@ -11,6 +11,7 @@
 
   "search.title": "Search",
   "search.placeholder": "Search items...",
+  "search.placeholderShort": "Search...",
   "search.noResults": "No items found",
 
   "sort.title": "Sort By",

@@ -17,6 +17,7 @@ interface HeaderProps {
   onCraftingGraphClick?: () => void;
   onOpenCraftingGraph?: (itemName: string) => void;
   isGraphModalOpen?: boolean;
+  onLogoClick?: () => void;
 }
 
 export default function Header({
@@ -25,11 +26,24 @@ export default function Header({
   onCraftingGraphClick,
   onOpenCraftingGraph,
   isGraphModalOpen,
+  onLogoClick,
 }: HeaderProps) {
   const { t, tItem, language } = useTranslation();
   const searchInputRef = useRef<HTMLInputElement>(null);
   const searchContainerRef = useRef<HTMLDivElement>(null);
   const [isSearchFocused, setIsSearchFocused] = useState(false);
+  const [isMac, setIsMac] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detect macOS for keyboard shortcut display and screen size for placeholder
+  useEffect(() => {
+    setIsMac(navigator.platform.toUpperCase().indexOf("MAC") >= 0);
+
+    const checkMobile = () => setIsMobile(window.innerWidth < 640);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   // Get current item translations for search dropdown
   const currentItemTranslations = useMemo(() => itemTranslations[language] || {}, [language]);
@@ -67,6 +81,31 @@ export default function Header({
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  // Keyboard shortcuts for desktop: Cmd+K / Ctrl+K to focus search, Escape to unfocus
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      // Check if we're on desktop (screen width >= 640px)
+      if (window.innerWidth < 640) return;
+
+      // Cmd+K (Mac) or Ctrl+K (Windows/Linux) to focus search
+      if ((event.metaKey || event.ctrlKey) && event.key === "k") {
+        event.preventDefault();
+        searchInputRef.current?.focus();
+        setIsSearchFocused(true);
+      }
+
+      // Escape to unfocus search bar
+      if (event.key === "Escape" && document.activeElement === searchInputRef.current) {
+        event.preventDefault();
+        searchInputRef.current?.blur();
+        setIsSearchFocused(false);
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
   // Handle search item select
   const handleSearchItemSelect = (name: string) => {
     // If graph modal is open, navigate to that item in the graph
@@ -88,6 +127,12 @@ export default function Header({
         {/* Logo */}
         <Link
           href="/"
+          onClick={(e) => {
+            if (onLogoClick) {
+              e.preventDefault();
+              onLogoClick();
+            }
+          }}
           className="flex-shrink-0 h-16 sm:h-20 md:h-24 flex items-center cursor-pointer"
         >
           <Image
@@ -114,9 +159,24 @@ export default function Header({
                 value={searchQuery || ""}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 onFocus={() => setIsSearchFocused(true)}
-                placeholder={t("search.placeholder")}
-                className="w-full pl-10 pr-8 py-2 sm:py-2.5 bg-black/50 backdrop-blur-sm border border-purple-500/30 rounded-xl text-gray-100 text-sm placeholder-gray-500 focus:outline-none focus:border-purple-400/60 focus:ring-2 focus:ring-purple-500/30 focus:bg-black/60 transition-all duration-300 shadow-lg shadow-purple-500/10 focus:shadow-purple-500/20"
+                onBlur={() => {
+                  // Delay to allow click on dropdown items
+                  setTimeout(() => setIsSearchFocused(false), 150);
+                }}
+                placeholder={isMobile ? t("search.placeholderShort") : t("search.placeholder")}
+                className="w-full pl-10 pr-8 sm:pr-20 py-2 sm:py-2.5 bg-black/50 backdrop-blur-sm border border-purple-500/30 rounded-xl text-gray-100 text-sm placeholder-gray-500 focus:outline-none focus:border-purple-400/60 focus:ring-2 focus:ring-purple-500/30 focus:bg-black/60 transition-all duration-300 shadow-lg shadow-purple-500/10 focus:shadow-purple-500/20"
               />
+              {/* Keyboard shortcut hint - only on desktop when not focused and no search query */}
+              {!isSearchFocused && !searchQuery && (
+                <span className="hidden sm:flex absolute right-3 items-center gap-1 text-gray-500 text-xs pointer-events-none">
+                  <kbd className="font-mono bg-black/40 border border-gray-600/50 rounded px-1.5 py-0.5 text-[10px]">
+                    {isMac ? "⌘" : "Ctrl"}
+                  </kbd>
+                  <kbd className="font-mono bg-black/40 border border-gray-600/50 rounded px-1.5 py-0.5 text-[10px]">
+                    K
+                  </kbd>
+                </span>
+              )}
               {searchQuery && (
                 <button
                   onClick={() => {

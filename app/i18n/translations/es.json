@@ -11,6 +11,7 @@
 
   "search.title": "Buscar",
   "search.placeholder": "Buscar objetos...",
+  "search.placeholderShort": "Buscar...",
 
   "sort.title": "Ordenar por",
   "sort.name": "Nombre",

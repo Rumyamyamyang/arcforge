@@ -11,6 +11,7 @@
 
   "search.title": "検索",
   "search.placeholder": "アイテムを検索...",
+  "search.placeholderShort": "検索...",
 
   "sort.title": "並び替え",
   "sort.name": "名前",

@@ -206,6 +206,33 @@ function HomeContent() {
     router.push("/", { scroll: false });
   }, [router]);
 
+  // Handle logo click - reset all state
+  const handleLogoClick = useCallback(() => {
+    setSearchQuery("");
+    setSelectedTypes(new Set());
+    setSelectedItem(null);
+    setIsSidebarOpen(false);
+    setIsTrackedOpen(false);
+    setIsSettingsOpen(false);
+    setIsGraphModalOpen(false);
+    router.push("/", { scroll: false });
+  }, [router]);
+
+  // Escape key to close item detail panel (desktop only)
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      // Only on desktop
+      if (window.innerWidth < 640) return;
+
+      if (event.key === "Escape" && selectedItem) {
+        setSelectedItem(null);
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [selectedItem]);
+
   // Get all unique types grouped by category
   const typesByCategory = useMemo(() => {
     const grouped: { [category: string]: string[] } = {
@@ -417,6 +444,7 @@ function HomeContent() {
           onCraftingGraphClick={handleCraftingGraphClick}
           onOpenCraftingGraph={openCraftingGraph}
           isGraphModalOpen={isGraphModalOpen}
+          onLogoClick={handleLogoClick}
         />
 
         {/* Mobile action bar: filters, settings, tracked items */}

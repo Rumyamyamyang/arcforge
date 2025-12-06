@@ -11,6 +11,7 @@
 
   "search.title": "搜索",
   "search.placeholder": "搜索物品...",
+  "search.placeholderShort": "搜索...",
 
   "sort.title": "排序方式",
   "sort.name": "名称",

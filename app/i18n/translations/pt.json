@@ -11,6 +11,7 @@
 
   "search.title": "Pesquisar",
   "search.placeholder": "Pesquisar itens...",
+  "search.placeholderShort": "Pesquisar...",
 
   "sort.title": "Ordenar por",
   "sort.name": "Nome",

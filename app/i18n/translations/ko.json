@@ -11,6 +11,7 @@
 
   "search.title": "검색",
   "search.placeholder": "아이템 검색...",
+  "search.placeholderShort": "검색...",
 
   "sort.title": "정렬 기준",
   "sort.name": "이름",
