@@ -17,8 +17,10 @@ export const SUPPORTED_LANGUAGES = [
   "fr", // French
   "de", // German
   "it", // Italian
+  "pl", // Polish
   "pt", // Portuguese
   "ru", // Russian
+  "tr", // Turkish
   "ja", // Japanese
   "ko", // Korean
   "zh", // Simplified Chinese
@@ -33,10 +35,12 @@ export const LANGUAGE_LABELS: Record<Language, string> = {
   fr: "Français",
   ja: "日本語",
   de: "Deutsch",
+  pl: "Polski",
   pt: "Português",
   es: "Español",
   it: "Italiano",
   ru: "Русский",
+  tr: "Türkçe",
   ko: "한국어",
   zh: "简体中文",
   zht: "繁體中文",
@@ -49,10 +53,12 @@ export const LANGUAGE_CODES: Record<Language, string> = {
   fr: "FR",
   ja: "JA",
   de: "DE",
+  pl: "PL",
   pt: "PT",
   es: "ES",
   it: "IT",
   ru: "RU",
+  tr: "TR",
   ko: "KO",
   zh: "ZH",
   zht: "HK",
