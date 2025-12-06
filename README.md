@@ -64,7 +64,7 @@ python run_pipeline.py
 
 ## Tech Stack
 
-- **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+- **Framework**: [Next.js 16](https://nextjs.org/)
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
 - **UI Library**: [React 19](https://reactjs.org/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
