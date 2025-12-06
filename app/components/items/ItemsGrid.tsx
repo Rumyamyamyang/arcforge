@@ -12,6 +12,7 @@ interface ItemsGridProps {
   displayPrice: boolean;
   displayWeight: boolean;
   showTrackIcons: boolean;
+  showSpecialIcons: boolean;
   onItemClick: (item: Item) => void;
   onItemTracked: (name: string) => void;
   isTrackedFunc: (name: string) => boolean;
@@ -26,6 +27,7 @@ export default function ItemsGrid({
   displayPrice,
   displayWeight,
   showTrackIcons,
+  showSpecialIcons,
   onItemClick,
   onItemTracked,
   isTrackedFunc,
@@ -65,6 +67,7 @@ export default function ItemsGrid({
                 displayPrice={displayPrice}
                 displayWeight={displayWeight}
                 showTrackIcon={showTrackIcons}
+                showSpecialIcons={showSpecialIcons}
                 lightweightMode={lightweightMode}
                 onClick={handleClick}
                 onTracked={() => onItemTracked(item.name)}

@@ -2,9 +2,28 @@
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Item } from "../../types/item";
-import { faEye } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEye,
+  faWrench,
+  faRocket,
+  faScroll,
+  faRecycle,
+  faCubes,
+  faKiwiBird,
+} from "@fortawesome/free-solid-svg-icons";
+import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import Image from "next/image";
 import { useTranslation } from "../../i18n";
+
+// Map special types to icons and colors
+const specialTypeIcons: Record<string, { icon: IconDefinition; color: string; bg: string }> = {
+  workshop_upgrade: { icon: faWrench, color: "text-amber-400", bg: "bg-amber-500/30" },
+  expedition: { icon: faRocket, color: "text-cyan-400", bg: "bg-cyan-500/30" },
+  quest: { icon: faScroll, color: "text-rose-400", bg: "bg-rose-500/30" },
+  safe_to_recycle: { icon: faRecycle, color: "text-green-400", bg: "bg-green-500/30" },
+  crafting_material: { icon: faCubes, color: "text-purple-400", bg: "bg-purple-500/30" },
+  scrappy_items: { icon: faKiwiBird, color: "text-orange-400", bg: "bg-orange-500/30" },
+};
 
 interface TrackedItemsPanelProps {
   items: Item[];
@@ -13,6 +32,7 @@ interface TrackedItemsPanelProps {
   itemSize: "tiny" | "small" | "medium" | "large";
   displayPrice: boolean;
   displayWeight: boolean;
+  showSpecialIcons: boolean;
   openCraftingGraphOnClick: boolean;
   onOpenCraftingGraph?: (itemName: string) => void;
   onClose: () => void;
@@ -45,6 +65,7 @@ export default function TrackedItemsPanel({
   itemSize,
   displayPrice,
   displayWeight,
+  showSpecialIcons,
   openCraftingGraphOnClick,
   onOpenCraftingGraph,
   onClose,
@@ -213,6 +234,30 @@ export default function TrackedItemsPanel({
                           }`}
                           style={lightweightMode ? undefined : { background: gradient }}
                         >
+                          {/* Special Type Icons - Bottom Left of Image */}
+                          {showSpecialIcons &&
+                            item.infobox?.special_types &&
+                            item.infobox.special_types.length > 0 && (
+                              <div className="absolute bottom-1 left-1 z-20 flex flex-row gap-0.5">
+                                {item.infobox.special_types
+                                  .filter((type) => specialTypeIcons[type])
+                                  .slice(0, 4)
+                                  .map((type) => {
+                                    const iconInfo = specialTypeIcons[type];
+                                    return (
+                                      <div
+                                        key={type}
+                                        className={`w-5 h-5 rounded flex items-center justify-center ${iconInfo.bg} backdrop-blur-sm border border-white/10`}
+                                      >
+                                        <FontAwesomeIcon
+                                          icon={iconInfo.icon}
+                                          className={`${iconInfo.color} text-[10px]`}
+                                        />
+                                      </div>
+                                    );
+                                  })}
+                              </div>
+                            )}
                           {item.image_urls?.thumb ? (
                             <Image
                               src={item.image_urls.thumb}

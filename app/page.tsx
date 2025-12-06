@@ -40,6 +40,7 @@ function HomeContent() {
   const [showTrackIcons, setShowTrackIcons] = useState(false);
   const [openCraftingGraphOnClick, setOpenCraftingGraphOnClick] = useState(false);
   const [lightweightMode, setLightweightMode] = useState(false);
+  const [showSpecialIcons, setShowSpecialIcons] = useState(false);
 
   // Crafting Graph Modal state - check URL params for initial state
   const graphItemParam = searchParams.get("graph");
@@ -87,6 +88,7 @@ function HomeContent() {
         showTrackIcons?: unknown;
         openCraftingGraphOnClick?: unknown;
         lightweightMode?: unknown;
+        showSpecialIcons?: unknown;
       } | null = null;
 
       if (raw) {
@@ -123,7 +125,10 @@ function HomeContent() {
 
           if (typeof parsed.lightweightMode === "boolean") {
             setLightweightMode(parsed.lightweightMode);
-            return;
+          }
+
+          if (typeof parsed.showSpecialIcons === "boolean") {
+            setShowSpecialIcons(parsed.showSpecialIcons);
           }
         }
 
@@ -150,6 +155,7 @@ function HomeContent() {
         showTrackIcons,
         openCraftingGraphOnClick,
         lightweightMode,
+        showSpecialIcons,
       };
       localStorage.setItem("item_view_settings", JSON.stringify(settings));
     } catch {
@@ -162,6 +168,7 @@ function HomeContent() {
     showTrackIcons,
     openCraftingGraphOnClick,
     lightweightMode,
+    showSpecialIcons,
   ]);
 
   const toggleItemTracked = (name: string) => {
@@ -545,6 +552,7 @@ function HomeContent() {
             displayPrice={displayPrice}
             displayWeight={displayWeight}
             showTrackIcons={showTrackIcons}
+            showSpecialIcons={showSpecialIcons}
             openCraftingGraphOnClick={openCraftingGraphOnClick}
             onOpenCraftingGraph={openCraftingGraph}
             lightweightMode={lightweightMode}
@@ -572,6 +580,7 @@ function HomeContent() {
           itemSize={itemSize}
           displayPrice={displayPrice}
           displayWeight={displayWeight}
+          showSpecialIcons={showSpecialIcons}
           openCraftingGraphOnClick={openCraftingGraphOnClick}
           onOpenCraftingGraph={openCraftingGraph}
           lightweightMode={lightweightMode}
@@ -597,6 +606,8 @@ function HomeContent() {
           setOpenCraftingGraphOnClick={setOpenCraftingGraphOnClick}
           lightweightMode={lightweightMode}
           setLightweightMode={setLightweightMode}
+          showSpecialIcons={showSpecialIcons}
+          setShowSpecialIcons={setShowSpecialIcons}
         />
 
         {/* Crafting Graph Modal */}
