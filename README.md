@@ -80,6 +80,10 @@ arcforge/
 │   ├── api/                  # API routes
 │   │   └── proxy-image/      # Image proxy for wiki thumbnails
 │   ├── components/           # React components
+│   ├── i18n/                 # Internationalization
+│   │   └── translations/     # Translation files
+│   │       ├── {lang}.json       # UI strings
+│   │       └── items_{lang}.json # Item names
 │   ├── layout.tsx            # Root layout
 │   └── page.tsx              # Item database page
 ├── data/                     # JSON data files
