@@ -70,7 +70,7 @@ export default function QuickSearchBar({ selectedEdgeTypes, onItemSelect }: Quic
     } else {
       // Use router for page navigation
       const filterParam = Array.from(selectedEdgeTypes).join(",");
-      router.push(`/crafting-graph?item=${encodeURIComponent(name)}&filters=${filterParam}`, {
+      router.push(`/?graph=${encodeURIComponent(name)}&filters=${filterParam}`, {
         scroll: false,
       });
     }

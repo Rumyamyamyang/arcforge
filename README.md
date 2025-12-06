@@ -80,7 +80,6 @@ arcforge/
 │   ├── api/                  # API routes
 │   │   └── proxy-image/      # Image proxy for wiki thumbnails
 │   ├── components/           # React components
-│   ├── crafting-graph/       # Crafting graph page
 │   ├── layout.tsx            # Root layout
 │   └── page.tsx              # Item database page
 ├── data/                     # JSON data files
