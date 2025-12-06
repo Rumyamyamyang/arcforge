@@ -190,8 +190,8 @@ export default function Header({
               )}
             </div>
 
-            {/* Search Dropdown */}
-            {isSearchFocused && filteredSearchItems.length > 0 && (
+            {/* Search Dropdown - Only show when crafting graph modal is open */}
+            {isGraphModalOpen && isSearchFocused && filteredSearchItems.length > 0 && (
               <div className="absolute top-full left-0 right-0 mt-1 bg-black/95 backdrop-blur-xl border border-purple-500/30 rounded-xl shadow-2xl overflow-hidden max-h-80 overflow-y-auto z-50">
                 {filteredSearchItems.map((name) => (
                   <button
