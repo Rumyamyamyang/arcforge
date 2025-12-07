@@ -71,7 +71,7 @@
   "source.Sentinel": "Sentinelle",
   "source.Bombardier": "Bombardier",
   "source.Bastion": "Bastion",
-  "source.Rocketeer": "Rocketeer",
+  "source.Rocketeer": "Artificier",
   "source.Leaper": "Bondisseur",
   "source.ARC Surveyor": "Arpenteur ARC",
   "source.Matriarch": "Matriarche",
@@ -111,7 +111,7 @@
   "itemType.Quick Use-Utility": "Utilitaire",
 
   "itemType.Ammo": "Munitions",
-  "itemType.Augment": "Augment",
+  "itemType.Augment": "Modules",
   "itemType.Shield": "Bouclier",
 
   "itemType.Advanced Material": "Matériau Avancé",
