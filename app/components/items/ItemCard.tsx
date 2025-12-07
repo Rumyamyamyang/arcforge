@@ -13,6 +13,7 @@ import {
   faRecycle,
   faCubes,
   faKiwiBird,
+  faDiagramProject,
 } from "@fortawesome/free-solid-svg-icons";
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
@@ -36,6 +37,7 @@ interface ItemCardProps {
   onTracked: () => void;
   isTrackedFunc: (name: string) => boolean;
   lightweightMode?: boolean;
+  showCraftGraphIcon?: boolean;
 }
 
 export default function ItemCard({
@@ -48,6 +50,7 @@ export default function ItemCard({
   onTracked,
   isTrackedFunc,
   lightweightMode = false,
+  showCraftGraphIcon = true,
 }: ItemCardProps) {
   const { t, tItem } = useTranslation();
   const rarity = item.infobox?.rarity || "Common";
@@ -95,6 +98,25 @@ export default function ItemCard({
           />
         </button>
       )}
+
+      {/* Crafting Graph Button - Top left corner */}
+      {showCraftGraphIcon && (
+        <a
+          href={`/?graph=${encodeURIComponent(item.name)}`}
+          onClick={(e) => {
+            e.stopPropagation();
+          }}
+          title={t("item.craftingGraph")}
+          className="absolute top-2 left-2 z-20 w-8 h-8 rounded-md flex items-center justify-center bg-gradient-to-br from-blue-500/30 to-cyan-500/30 hover:from-blue-500/40 hover:to-cyan-500/40 backdrop-blur-sm text-white transition-all duration-200 hover:scale-110"
+          style={{ cursor: "pointer" }}
+        >
+          <FontAwesomeIcon
+            icon={faDiagramProject}
+            className="text-sm relative z-10 drop-shadow-lg"
+          />
+        </a>
+      )}
+
       {/* Animated border glow on hover (disabled in lightweight mode) */}
       {!lightweightMode && (
         <div

@@ -13,6 +13,7 @@ interface ItemsGridProps {
   displayWeight: boolean;
   showTrackIcons: boolean;
   showSpecialIcons: boolean;
+  showCraftGraphIcon?: boolean;
   onItemClick: (item: Item) => void;
   onItemTracked: (name: string) => void;
   isTrackedFunc: (name: string) => boolean;
@@ -28,6 +29,7 @@ export default function ItemsGrid({
   displayWeight,
   showTrackIcons,
   showSpecialIcons,
+  showCraftGraphIcon = true,
   onItemClick,
   onItemTracked,
   isTrackedFunc,
@@ -68,6 +70,7 @@ export default function ItemsGrid({
                 displayWeight={displayWeight}
                 showTrackIcon={showTrackIcons}
                 showSpecialIcons={showSpecialIcons}
+                showCraftGraphIcon={showCraftGraphIcon}
                 lightweightMode={lightweightMode}
                 onClick={handleClick}
                 onTracked={() => onItemTracked(item.name)}

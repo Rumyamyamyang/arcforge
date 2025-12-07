@@ -142,6 +142,8 @@
   "settings.lightweightModeHelp": "Désactive certains effets visuels pour améliorer les performances sur les machines moins puissantes.",
   "settings.showSpecialIcons": "Afficher les icônes spéciales",
   "settings.showSpecialIconsHelp": "Affiche des icônes pour les types d'objets spéciaux (amélioration d'atelier, expédition, quête, etc.) sur les cartes.",
+  "settings.showCraftGraphIcon": "Bouton Graphe de Craft",
+  "settings.showCraftGraphIconHelp": "Affiche un bouton sur chaque carte pour ouvrir directement le graphe de craft de l'objet.",
 
   "item.location": "Emplacement",
   "item.weight": "Poids",

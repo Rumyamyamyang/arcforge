@@ -117,6 +117,8 @@
   "settings.lightweightModeHelp": "Disables some visual effects to improve performance on slower devices.",
   "settings.showSpecialIcons": "Show Special Icons",
   "settings.showSpecialIconsHelp": "Shows icons for special item types (workshop upgrade, expedition, quest, etc.) on the item cards.",
+  "settings.showCraftGraphIcon": "Craft Graph Button",
+  "settings.showCraftGraphIconHelp": "Shows a button on each item card to directly open the crafting graph for that item.",
 
   "item.location": "Location",
   "item.weight": "Weight",
