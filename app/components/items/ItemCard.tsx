@@ -76,7 +76,6 @@ export default function ItemCard({
               borderStyle: "solid",
               borderColor: borderColor,
               boxShadow: `0 4px 20px ${borderColor}30, 0 0 40px ${borderColor}10, inset 0 1px 0 rgba(255,255,255,0.1)`,
-              transform: "translateZ(0)",
               willChange: "transform",
               backfaceVisibility: "hidden",
               WebkitFontSmoothing: "antialiased",
@@ -111,7 +110,9 @@ export default function ItemCard({
             e.stopPropagation();
           }}
           title={t("item.craftingGraph")}
-          className="absolute top-2 left-2 z-20 w-8 h-8 rounded-md flex items-center justify-center bg-gradient-to-br from-blue-500/30 to-cyan-500/30 hover:from-blue-500/40 hover:to-cyan-500/40 backdrop-blur-sm text-white transition-all duration-200 hover:scale-110"
+          className={`absolute top-2 z-20 w-8 h-8 rounded-md flex items-center justify-center bg-gradient-to-br from-blue-500/30 to-cyan-500/30 hover:from-blue-500/40 hover:to-cyan-500/40 backdrop-blur-sm text-white transition-all duration-200 hover:scale-110 ${
+            showTrackIcon ? "left-11" : "left-2"
+          }`}
           style={{ cursor: "pointer" }}
         >
           <FontAwesomeIcon
