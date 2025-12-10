@@ -10,6 +10,7 @@ import {
   faRecycle,
   faCubes,
   faKiwiBird,
+  faDiagramProject,
 } from "@fortawesome/free-solid-svg-icons";
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import Image from "next/image";
@@ -33,8 +34,7 @@ interface TrackedItemsPanelProps {
   displayPrice: boolean;
   displayWeight: boolean;
   showSpecialIcons: boolean;
-  openCraftingGraphOnClick: boolean;
-  onOpenCraftingGraph?: (itemName: string) => void;
+  showCraftGraphIcon?: boolean;
   onClose: () => void;
   onItemClick: (item: Item) => void;
   onItemTracked: (name: string) => void;
@@ -66,8 +66,7 @@ export default function TrackedItemsPanel({
   displayPrice,
   displayWeight,
   showSpecialIcons,
-  openCraftingGraphOnClick,
-  onOpenCraftingGraph,
+  showCraftGraphIcon = true,
   onClose,
   onItemClick,
   onItemTracked,
@@ -143,11 +142,7 @@ export default function TrackedItemsPanel({
                       <div
                         key={`${item.name}-${index}`}
                         onClick={() => {
-                          if (openCraftingGraphOnClick && onOpenCraftingGraph) {
-                            onOpenCraftingGraph(item.name);
-                          } else {
-                            onItemClick(item);
-                          }
+                          onItemClick(item);
                           onClose();
                         }}
                         className={`group relative rounded-2xl overflow-hidden cursor-pointer ${
@@ -218,6 +213,25 @@ export default function TrackedItemsPanel({
                             className="text-white text-xl relative z-10 drop-shadow-lg"
                           />
                         </button>
+
+                        {/* Crafting Graph Button */}
+                        {showCraftGraphIcon && (
+                          <a
+                            href={`/?graph=${encodeURIComponent(item.name)}`}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                            }}
+                            title={t("item.craftingGraph")}
+                            className="absolute top-2 left-11 z-20 w-8 h-8 rounded-md flex items-center justify-center bg-blue-500/80 hover:bg-blue-500 text-white transition-all duration-200 hover:scale-110"
+                            style={{ cursor: "pointer" }}
+                          >
+                            <FontAwesomeIcon
+                              icon={faDiagramProject}
+                              className="text-sm relative z-10 drop-shadow-lg"
+                            />
+                          </a>
+                        )}
+
                         {/* Animated border glow on hover */}
                         {!lightweightMode && (
                           <div

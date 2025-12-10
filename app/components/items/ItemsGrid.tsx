@@ -13,11 +13,10 @@ interface ItemsGridProps {
   displayWeight: boolean;
   showTrackIcons: boolean;
   showSpecialIcons: boolean;
+  showCraftGraphIcon?: boolean;
   onItemClick: (item: Item) => void;
   onItemTracked: (name: string) => void;
   isTrackedFunc: (name: string) => boolean;
-  openCraftingGraphOnClick: boolean;
-  onOpenCraftingGraph?: (itemName: string) => void;
   lightweightMode?: boolean;
 }
 
@@ -28,11 +27,10 @@ export default function ItemsGrid({
   displayWeight,
   showTrackIcons,
   showSpecialIcons,
+  showCraftGraphIcon = true,
   onItemClick,
   onItemTracked,
   isTrackedFunc,
-  openCraftingGraphOnClick,
-  onOpenCraftingGraph,
   lightweightMode = false,
 }: ItemsGridProps) {
   const { t } = useTranslation();
@@ -53,11 +51,7 @@ export default function ItemsGrid({
         >
           {items.map((item, index) => {
             const handleClick = () => {
-              if (openCraftingGraphOnClick && onOpenCraftingGraph) {
-                onOpenCraftingGraph(item.name);
-              } else {
-                onItemClick(item);
-              }
+              onItemClick(item);
             };
 
             return (
@@ -68,6 +62,7 @@ export default function ItemsGrid({
                 displayWeight={displayWeight}
                 showTrackIcon={showTrackIcons}
                 showSpecialIcons={showSpecialIcons}
+                showCraftGraphIcon={showCraftGraphIcon}
                 lightweightMode={lightweightMode}
                 onClick={handleClick}
                 onTracked={() => onItemTracked(item.name)}

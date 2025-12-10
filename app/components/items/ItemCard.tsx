@@ -13,6 +13,7 @@ import {
   faRecycle,
   faCubes,
   faKiwiBird,
+  faDiagramProject,
 } from "@fortawesome/free-solid-svg-icons";
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
@@ -36,6 +37,7 @@ interface ItemCardProps {
   onTracked: () => void;
   isTrackedFunc: (name: string) => boolean;
   lightweightMode?: boolean;
+  showCraftGraphIcon?: boolean;
 }
 
 export default function ItemCard({
@@ -48,6 +50,7 @@ export default function ItemCard({
   onTracked,
   isTrackedFunc,
   lightweightMode = false,
+  showCraftGraphIcon = true,
 }: ItemCardProps) {
   const { t, tItem } = useTranslation();
   const rarity = item.infobox?.rarity || "Common";
@@ -63,7 +66,7 @@ export default function ItemCard({
       className={`group relative rounded-2xl overflow-hidden cursor-pointer ${
         lightweightMode
           ? "bg-black/40 border border-gray-700"
-          : "bg-gradient-to-br from-black/60 via-black/40 to-black/60 backdrop-blur-sm hover:scale-105 hover:-translate-y-1 transition-all duration-300"
+          : "bg-gradient-to-br from-black/60 via-black/40 to-black/60 hover:scale-105 hover:-translate-y-1 transition-all duration-300"
       }`}
       style={
         lightweightMode
@@ -73,6 +76,9 @@ export default function ItemCard({
               borderStyle: "solid",
               borderColor: borderColor,
               boxShadow: `0 4px 20px ${borderColor}30, 0 0 40px ${borderColor}10, inset 0 1px 0 rgba(255,255,255,0.1)`,
+              willChange: "transform",
+              backfaceVisibility: "hidden",
+              WebkitFontSmoothing: "antialiased",
             }
       }
     >
@@ -84,17 +90,37 @@ export default function ItemCard({
             onTracked();
           }}
           title={isTrackedFunc(item.name) ? t("track.untrack") : t("track.track")}
-          className={`absolute top-2 left-2 z-20 w-8 h-8 rounded-md flex items-center justify-center text-sm ${
-            isTrackedFunc(item.name) ? "bg-yellow-400 text-black" : "bg-black/40 text-gray-300"
+          className={`absolute top-2 left-2 z-20 w-8 h-8 rounded-md flex items-center justify-center text-sm backdrop-blur-sm transition-all duration-200 hover:scale-110 ${
+            isTrackedFunc(item.name)
+              ? "bg-gradient-to-br from-yellow-500/50 to-amber-500/50 hover:from-yellow-500/60 hover:to-amber-500/60 text-white"
+              : "bg-gradient-to-br from-gray-500/30 to-slate-500/30 hover:from-gray-500/40 hover:to-slate-500/40 text-white"
+          }`}
+          style={{ cursor: "pointer" }}
+        >
+          <FontAwesomeIcon icon={faEye} className="text-sm relative z-10 drop-shadow-lg" />
+        </button>
+      )}
+
+      {/* Crafting Graph Button - Top left corner */}
+      {showCraftGraphIcon && (
+        <a
+          href={`/?graph=${encodeURIComponent(item.name)}`}
+          onClick={(e) => {
+            e.stopPropagation();
+          }}
+          title={t("item.craftingGraph")}
+          className={`absolute top-2 z-20 w-8 h-8 rounded-md flex items-center justify-center bg-gradient-to-br from-blue-500/30 to-cyan-500/30 hover:from-blue-500/40 hover:to-cyan-500/40 backdrop-blur-sm text-white transition-all duration-200 hover:scale-110 ${
+            showTrackIcon ? "left-11" : "left-2"
           }`}
           style={{ cursor: "pointer" }}
         >
           <FontAwesomeIcon
-            icon={faEye}
-            className="text-white text-xl relative z-10 drop-shadow-lg"
+            icon={faDiagramProject}
+            className="text-sm relative z-10 drop-shadow-lg"
           />
-        </button>
+        </a>
       )}
+
       {/* Animated border glow on hover (disabled in lightweight mode) */}
       {!lightweightMode && (
         <div
@@ -196,6 +222,8 @@ export default function ItemCard({
           style={{
             color: borderColor,
             textShadow: `0 2px 8px ${borderColor}40`,
+            transform: "scale(1)",
+            transformOrigin: "center",
           }}
         >
           {translatedName}

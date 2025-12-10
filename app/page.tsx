@@ -34,13 +34,13 @@ function HomeContent() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isTrackedOpen, setIsTrackedOpen] = useState(false);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
-  const [itemSize, setItemSize] = useState<"tiny" | "small" | "medium" | "large">("small");
+  const [itemSize, setItemSize] = useState<"tiny" | "small" | "medium" | "large">("medium");
   const [displayPrice, setDisplayPrice] = useState(false);
   const [displayWeight, setDisplayWeight] = useState(false);
   const [showTrackIcons, setShowTrackIcons] = useState(false);
-  const [openCraftingGraphOnClick, setOpenCraftingGraphOnClick] = useState(false);
   const [lightweightMode, setLightweightMode] = useState(false);
   const [showSpecialIcons, setShowSpecialIcons] = useState(false);
+  const [showCraftGraphIcon, setShowCraftGraphIcon] = useState(false);
 
   // Crafting Graph Modal state - check URL params for initial state
   const graphItemParam = searchParams.get("graph");
@@ -92,6 +92,7 @@ function HomeContent() {
         openCraftingGraphOnClick?: unknown;
         lightweightMode?: unknown;
         showSpecialIcons?: unknown;
+        showCraftGraphIcon?: unknown;
       } | null = null;
 
       if (raw) {
@@ -122,16 +123,16 @@ function HomeContent() {
             setShowTrackIcons(parsed.showTrackIcons);
           }
 
-          if (typeof parsed.openCraftingGraphOnClick === "boolean") {
-            setOpenCraftingGraphOnClick(parsed.openCraftingGraphOnClick);
-          }
-
           if (typeof parsed.lightweightMode === "boolean") {
             setLightweightMode(parsed.lightweightMode);
           }
 
           if (typeof parsed.showSpecialIcons === "boolean") {
             setShowSpecialIcons(parsed.showSpecialIcons);
+          }
+
+          if (typeof parsed.showCraftGraphIcon === "boolean") {
+            setShowCraftGraphIcon(parsed.showCraftGraphIcon);
           }
         }
 
@@ -156,9 +157,9 @@ function HomeContent() {
         displayPrice,
         displayWeight,
         showTrackIcons,
-        openCraftingGraphOnClick,
         lightweightMode,
         showSpecialIcons,
+        showCraftGraphIcon,
       };
       localStorage.setItem("item_view_settings", JSON.stringify(settings));
     } catch {
@@ -169,9 +170,9 @@ function HomeContent() {
     displayPrice,
     displayWeight,
     showTrackIcons,
-    openCraftingGraphOnClick,
     lightweightMode,
     showSpecialIcons,
+    showCraftGraphIcon,
   ]);
 
   const toggleItemTracked = (name: string) => {
@@ -556,8 +557,7 @@ function HomeContent() {
             displayWeight={displayWeight}
             showTrackIcons={showTrackIcons}
             showSpecialIcons={showSpecialIcons}
-            openCraftingGraphOnClick={openCraftingGraphOnClick}
-            onOpenCraftingGraph={openCraftingGraph}
+            showCraftGraphIcon={showCraftGraphIcon}
             lightweightMode={lightweightMode}
             onItemClick={setSelectedItem}
             onItemTracked={toggleItemTracked}
@@ -584,8 +584,7 @@ function HomeContent() {
           displayPrice={displayPrice}
           displayWeight={displayWeight}
           showSpecialIcons={showSpecialIcons}
-          openCraftingGraphOnClick={openCraftingGraphOnClick}
-          onOpenCraftingGraph={openCraftingGraph}
+          showCraftGraphIcon={showCraftGraphIcon}
           lightweightMode={lightweightMode}
           onClose={() => setIsTrackedOpen(false)}
           onItemClick={setSelectedItem}
@@ -605,12 +604,12 @@ function HomeContent() {
           setDisplayWeight={setDisplayWeight}
           showTrackIcons={showTrackIcons}
           setShowTrackIcons={setShowTrackIcons}
-          openCraftingGraphOnClick={openCraftingGraphOnClick}
-          setOpenCraftingGraphOnClick={setOpenCraftingGraphOnClick}
           lightweightMode={lightweightMode}
           setLightweightMode={setLightweightMode}
           showSpecialIcons={showSpecialIcons}
           setShowSpecialIcons={setShowSpecialIcons}
+          showCraftGraphIcon={showCraftGraphIcon}
+          setShowCraftGraphIcon={setShowCraftGraphIcon}
         />
 
         {/* Crafting Graph Modal */}
