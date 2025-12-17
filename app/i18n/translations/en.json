@@ -195,6 +195,9 @@
   "buttons.openHelp": "Open help",
   "buttons.openRelationFilters": "Open relation filters",
   "buttons.close": "Close",
+  "buttons.share": "Share",
+
+  "graph.shareText": "Check out this crafting graph on ARC Forge",
 
   "language.select": "Select language",
 

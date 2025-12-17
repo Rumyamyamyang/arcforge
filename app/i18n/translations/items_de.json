@@ -347,7 +347,9 @@
   "Heavy Ammo": "Schwere Munition",
   "Shotgun Ammo": "Schrotflintenmunition",
   "Launcher Ammo": "Werfermunition",
-  "Energy Clip": "Energieclip"
+  "Energy Clip": "Energieclip",
+
+  "Firecracker": "Feuerwerk",
+  "Fireworks Box": "Feuerwerk-Kiste",
+  "Candleberries": "Kerzenbeeren"
 }
-
-
