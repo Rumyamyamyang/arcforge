@@ -3,7 +3,13 @@
 import { useEffect, useRef, useState, useMemo, useCallback } from "react";
 import cytoscape from "cytoscape";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCog, faQuestionCircle, faTimes } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCog,
+  faQuestionCircle,
+  faShareNodes,
+  faTimes,
+  faCheck,
+} from "@fortawesome/free-solid-svg-icons";
 import itemsRelationData from "../../../data/items_relation.json";
 import GraphSettingsPanel from "./GraphSettingsPanel";
 import HelpPanel from "./HelpPanel";
@@ -33,6 +39,7 @@ export default function CraftingGraphModal({
   const resizeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [isHelpOpen, setIsHelpOpen] = useState(false);
+  const [showCopied, setShowCopied] = useState(false);
 
   // Edge type filters - default to all types
   const [selectedEdgeTypes, setSelectedEdgeTypes] = useState<Set<string>>(
@@ -60,6 +67,44 @@ export default function CraftingGraphModal({
     },
     [onItemChange],
   );
+
+  // Handle share button click
+  const handleShare = useCallback(async () => {
+    const shareUrl = `${window.location.origin}/?graph=${encodeURIComponent(itemName)}`;
+    const shareData = {
+      title: `${tItem(itemName)} - ARC Forge Crafting Graph`,
+      text: t("graph.shareText") || `Check out the crafting graph for ${tItem(itemName)}`,
+      url: shareUrl,
+    };
+
+    // Try Web Share API first (mobile)
+    if (navigator.share) {
+      try {
+        await navigator.share(shareData);
+        return;
+      } catch (err) {
+        // User cancelled or share failed, fall back to clipboard
+        if ((err as Error).name === "AbortError") return;
+      }
+    }
+
+    // Fall back to clipboard
+    try {
+      await navigator.clipboard.writeText(shareUrl);
+      setShowCopied(true);
+      setTimeout(() => setShowCopied(false), 2000);
+    } catch {
+      // Fallback for older browsers
+      const textArea = document.createElement("textarea");
+      textArea.value = shareUrl;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textArea);
+      setShowCopied(true);
+      setTimeout(() => setShowCopied(false), 2000);
+    }
+  }, [itemName, t, tItem]);
 
   useEffect(() => {
     if (!isOpen || !containerRef.current) {
@@ -210,14 +255,28 @@ export default function CraftingGraphModal({
     return (
       /* Modal Container - positioned below header using margin-top */
       <div className="fixed inset-0 z-30 mt-16 sm:mt-20 md:mt-24 flex flex-col bg-[#07020b]">
-        {/* Close Button */}
-        <button
-          onClick={onClose}
-          className="absolute top-4 right-4 z-30 w-12 h-12 flex items-center justify-center bg-gradient-to-br from-red-500/30 to-pink-500/20 backdrop-blur-xl rounded-full shadow-2xl hover:from-red-500/40 hover:to-pink-500/30 transition-all duration-300 border border-white/20 hover:border-white/30 hover:scale-105"
-          aria-label={t("buttons.close")}
-        >
-          <FontAwesomeIcon icon={faTimes} className="text-white text-xl" />
-        </button>
+        {/* Top Right Buttons */}
+        <div className="absolute top-4 right-4 z-30 flex items-center gap-3">
+          {/* Share Button */}
+          <button
+            onClick={handleShare}
+            className="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-emerald-500/30 to-teal-500/20 backdrop-blur-xl rounded-full shadow-2xl hover:from-emerald-500/40 hover:to-teal-500/30 transition-all duration-300 border border-white/20 hover:border-white/30 hover:scale-105"
+            aria-label={t("buttons.share")}
+          >
+            <FontAwesomeIcon
+              icon={showCopied ? faCheck : faShareNodes}
+              className={`text-xl transition-colors duration-200 ${showCopied ? "text-emerald-400" : "text-white"}`}
+            />
+          </button>
+          {/* Close Button */}
+          <button
+            onClick={onClose}
+            className="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-red-500/30 to-pink-500/20 backdrop-blur-xl rounded-full shadow-2xl hover:from-red-500/40 hover:to-pink-500/30 transition-all duration-300 border border-white/20 hover:border-white/30 hover:scale-105"
+            aria-label={t("buttons.close")}
+          >
+            <FontAwesomeIcon icon={faTimes} className="text-white text-xl" />
+          </button>
+        </div>
         <ErrorState itemName={itemName} />
       </div>
     );
@@ -226,14 +285,28 @@ export default function CraftingGraphModal({
   return (
     /* Modal Container - positioned below header using margin-top matching header heights */
     <div className="fixed inset-0 z-30 mt-16 sm:mt-20 md:mt-24 flex flex-col bg-[#07020b] text-gray-100 overflow-hidden">
-      {/* Close Button */}
-      <button
-        onClick={onClose}
-        className="absolute top-4 right-4 z-30 w-12 h-12 flex items-center justify-center bg-gradient-to-br from-red-500/30 to-pink-500/20 backdrop-blur-xl rounded-full shadow-2xl hover:from-red-500/40 hover:to-pink-500/30 transition-all duration-300 border border-white/20 hover:border-white/30 hover:scale-105"
-        aria-label={t("buttons.close")}
-      >
-        <FontAwesomeIcon icon={faTimes} className="text-white text-xl" />
-      </button>
+      {/* Top Right Buttons */}
+      <div className="absolute top-4 right-4 z-30 flex items-center gap-3">
+        {/* Share Button */}
+        <button
+          onClick={handleShare}
+          className="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-emerald-500/30 to-teal-500/20 backdrop-blur-xl rounded-full shadow-2xl hover:from-emerald-500/40 hover:to-teal-500/30 transition-all duration-300 border border-white/20 hover:border-white/30 hover:scale-105"
+          aria-label={t("buttons.share")}
+        >
+          <FontAwesomeIcon
+            icon={showCopied ? faCheck : faShareNodes}
+            className={`text-xl transition-colors duration-200 ${showCopied ? "text-emerald-400" : "text-white"}`}
+          />
+        </button>
+        {/* Close Button */}
+        <button
+          onClick={onClose}
+          className="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-red-500/30 to-pink-500/20 backdrop-blur-xl rounded-full shadow-2xl hover:from-red-500/40 hover:to-pink-500/30 transition-all duration-300 border border-white/20 hover:border-white/30 hover:scale-105"
+          aria-label={t("buttons.close")}
+        >
+          <FontAwesomeIcon icon={faTimes} className="text-white text-xl" />
+        </button>
+      </div>
 
       {/* Help Button */}
       <button
