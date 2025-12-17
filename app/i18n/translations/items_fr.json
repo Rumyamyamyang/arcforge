@@ -345,6 +345,9 @@
   "Heavy Ammo": "Munitions Lourdes",
   "Shotgun Ammo": "Munitions de Fusil",
   "Launcher Ammo": "Munitions de Lanceur",
-  "Energy Clip": "Chargeur Énergétique"
-}
+  "Energy Clip": "Chargeur Énergétique",
 
+  "Firecracker": "Feu de Poche",
+  "Fireworks Box": "Boîte de Feux d'Artifice",
+  "Candleberries": "Baies de Bougie"
+}
